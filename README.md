@@ -4,9 +4,6 @@ A tool for the sales team to utilize that assists with the completion of RFP ven
 
 https://d318fvq3xvqnjg.cloudfront.net/
 
-*Username*: twa  
-*Password*: chatbot
-
 ## Demo
 
 ![image info](readmeImages/uploadPage.png)
