@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWA Vendor Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.3.min.js"></script>
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+        
+</head>
+<body class="bg-light"> 
+
+    <!-- Page nav bar -->
+    <div class="header text-white"> 
+        <img src="images/thirdwave-logo.png" alt="Logo" class="headerText"> 
+        <!-- calls exportFile() -->
+        <button type="button" id="exportButton" class="btn btn-outline-primary">Export</button>
+    </div>
+
+    <!-- Loading screen hidden by default-->
+    <div id="loadingScreen" style="display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(44, 44, 44, 0.7); z-index: 1000;">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <img style="width: 50px;" src="images/loading.gif" alt="Loading..."/>
+        </div>
+    </div>
+
+    <!-- LLM update instructions popup on upload page -->
+    <div id="llmInstructionsPopup">
+        <div class="llmInstructionsPopup-content">
+            <p class="llmInstructionsPopup-close">Save</p>
+            <textarea id="llmInstructionTextArea" placeholder="Type something..."></textarea>
+        </div>
+    </div>
+
+    <!-- Upload screen hidden by default -->
+    <div id="uploadScreen" style="display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(44, 44, 44, 0.7); z-index: 1000;">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #333; padding: 20px; border-radius: 8px;">
+            <form id="uploadForm" style="display: flex; flex-direction: column; align-items: center;">
+                <input name="name" class="uploadTextField" placeholder="Your name" id="userName" type="text"> 
+                <input name="projectTitle" placeholder="Project title" id="projectTitle" class="uploadTextField" type="text" /> 
+                <input type="file" id="excelFile" accept=".xlsx, .xls" style="margin-bottom: 1rem; border: 1px solid #888; padding: 8px; width: 80%; color: #fff; background: #bbb;" />
+                <button id="llmInstructionsPopupButton">Edit Prompt</button>
+                <!-- calls sendFile() -->
+                <button type="button" id="uploadButton" class="btn btn-secondary" style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; cursor: pointer;">Upload</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Main body including Question/Answers and Answer info divs -->
+    <div class="container-fluid h-100">
+        <div class="main row h-100">
+            
+            <!-- Q&A header and placeholder div for uploaded Q&A pairs -->
+            <div class="col-md-8 scrollable-div shadow-sm">
+                <div class="col-md-4 QAheader text-white p-3" style="background-color: #438dcb;"><h5>Questions:</h5></div>
+                <div class="col-md-4 QAheader text-white p-3 offset-md-4" style="background-color: #438dcb;"><h5>Answers:</h5></div>
+                <div class="QA">
+                </div>
+            </div>
+
+            <!-- Answer info div -->
+            <div class="col-md-4 scrollable-div shadow"> 
+                <div class="col-md-4 answerHeader text-white"><h5>Answer info:</h5></div>
+                <div class="answerInfo promptInfo">
+                    <p class="answerInfoTitle">Prompt:</p>
+                    <textarea name="alteredQuery" id="alteredQuery" class="form-control text-fixed-size"></textarea> 
+                    <!-- calls promptChange() -->
+                    <button type="submit" id="alteredQuerySubmit" class="btn btn-warning">Regenerate answer</button> 
+                </div>
+                <div class="answerInfo responseInfo">
+                    <p class="answerInfoTitle">Answer:</p>
+                    <textarea name="alteredResponse" id="alteredResponse" class="form-control text-fixed-size"></textarea>
+                    <button type="submit" id="alteredResponseSubmit" class="btn btn-warning">Save to export</button> 
+                    <!-- calls saveToDB() -->
+                    <button type="submit" id="uploadDBButton" class="btn btn-outline-primary">Save to DB</button>
+                </div>
+                <div class="answerInfo">
+                    <p class="answerInfoTitle">Sources referenced:</p>
+                    <!-- Placeholder div for context to be filled in -->
+                    <div class="contexts">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap Bundle with Popper (JavaScript) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+

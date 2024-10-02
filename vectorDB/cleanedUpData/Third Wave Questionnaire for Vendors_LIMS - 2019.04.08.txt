@@ -1,0 +1,29 @@
+Does the application have the following sample workflow capabilities?
+Sample Entry	Yes
+Label/barcode generation	Yes
+User can create/edit testing program	Yes
+Test scheduling	Yes
+Flag OOS results	Yes
+User can review/approve results	Yes
+CoA/report generation	Yes\
+Does the application have the following additional capabilities?
+Conduct stability studies	Yes
+Maintain instrument calibration records	Yes
+Maintain sample and reagent inventories	Yes
+KPI/internal metric analysis	Yes\
+Does the application have the following data management capabilities?
+Maintain chain of custody	Yes
+Maintain audit trail	Yes
+Access management	Yes
+Store & recall data	Yes
+Backup data	Yes\
+Does the application have the following integration capabilities?
+In general, Lockbox LIMS can integrate easily with any product that is API-enabled. In cases that APIs are not available, we have experience with installing middleware such as Boomi to facilitate integrations with other systems
+ERP – receive work orders and lot info, send lot release data/approval 	Yes
+EDMS – display current protocols/procedures	Yes
+QMS – initiate investigations/deviations	Yes
+Lab instruments – send lot/sample data, receive analytical data/results 	Yes
+Active Directory – users can be added/deleted from another system	YES, SAML 2.0\
+What countries is your product currently deployed in?	US, UK\
+Do you have existing clients in GMP regulated industries (Pharma, Food)?	Yes\
+Do you have existing clients in the Cannabis industry?	No\

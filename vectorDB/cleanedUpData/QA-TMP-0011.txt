@@ -1,0 +1,126 @@
+Does your organization have a Quality Manual? - Yes\
+If yes, is it available upon request? - Yes\
+Does the organization have an independent Quality Assurance (QA) group? - No\
+Does the organization have formal roles and responsibilities for QA? - Yes\
+Does the organization maintain Quality Management System SOPs? - Yes\
+Are the SOPs periodically reviewed? - Yes\
+Is there a software Quality Assurance Plan (QAP)? - Yes\
+Does the software QAP follow an industry standard, if yes, note below? - No (We borrow from various standards to inform our processes including HIPAA/HiTRUST, ISO-27000, and others.)\
+Does the QAP include a formalized development life cycle? - Yes\
+Does the QAP include a risk assessment and mitigation process? - Yes\
+Does the QAP clearly note inspection and testing methodologies? - Yes\
+Does the QAP contain appropriate documentation of activities and responsibilities? - Yes\
+Does the organization perform periodic internal audits? - Yes\
+Are audit results reviewed by management and followed up with timely corrective actions? - Yes\
+Does the organization maintain a supplier qualification and auditing program? - No\
+Is supplier qualification risk based? - N/A\
+Are there SOPs for document and record control and retention? - No\
+Has the organization been inspected by the FDA or other regulatory authority? If yes note which organization and when: Organization and date - No\
+Does your organization document individual and department responsibilities for development, testing, and release of product? - Yes\
+Does the organization have an internal development staff? - Yes\
+Does the organization employ contract developers? If yes, what is the percentage of contract developers? - Yes (75%)\
+Are technical qualifications for internal or contract developers defined and utilized as hiring criteria? - No\
+Does QA have a role in the design process? - Yes (All new software features are evaluated for risk before being prioritized for development)\
+Does QA have a role in the development process? - Yes (Acceptance criteria and regression testing requirements are developed for all new features)\
+Does QA have a role in the testing process? - Yes (All new features are tested before release and regression testing is performed on related functionality)\
+Does QA have a role in the product release? - Yes (All product releases are signed off by QA before general availability)\
+Does QA have a role in auditing? Briefly describe the role of QA - No\
+Do technical resources have FDA regulatory compliance experience? If yes, please estimate the percent of technical resources with relevant experience - No\
+Are records in place to allow identification of which programmer created or revised each portion of the source code? - Yes\
+Do developers follow formal coding standards and/or guidelines? - No\
+Do formal standards exist for entity naming conventions? - No\
+Do formal standards exist for revision level notation? - No\
+Do formal standards exist for program descriptions? - No\
+Do formal standards exist for data flow diagrams? - No\
+Do formal standards exist for structured coding? - No\
+Do formal standards exist for the user interface? - No\
+Is there a change control process for changes to published formal standards and/or guidelines? - Yes\
+Is there a formal software development life cycle procedure? - Yes\
+Is there a formal methodology for software risk assessment? If yes, describe the assessment criteria - Yes (All new features and changes are assessed for risk before development)\
+Is the risk assessment considered during software development? - Yes\
+Are user requirements documented and approved prior to system development or modification? If yes, please note the departments involved - Yes (User requirements are documented for all changes by the product management team)\
+Are functional requirements adequately detailed to enable thorough testing documented and approved prior to system development or modification? - No\
+Are system designs adequately detailed to prevent ad hoc decisions from developers documented and approved prior to system development? - Yes\
+Are thorough software development plans prepared and approved? - No\
+Do software development plans include definition, description, risk mitigation strategies, resource responsibilities, and development schedules? - No\
+Are design reviews performed and documented? - No\
+Are code reviews performed and documented? - No\
+Are traceability matrices created that consider risks, specifications, designs, and programs? - Yes\
+Are software tools used to assist with program development? If yes, please identify - Yes (GitHub for version tracking, Gearset to compare and deploy metadata, Salesforce database to track software changes, features, and risk assessment)\
+Are software tools validated or qualified depending on the risk level? - No\
+Has the product been validated per 21CFR Part 11.10(a) requirements? - No\
+Does the validation provide evidence that the system can generate accurate and complete copies of electronic records in human readable and electronic formats as required by 21 CFR Part 11.10(b)? - No\
+Are there adequate written procedures for validation (verification) and testing? - Yes\
+Are there adequate written procedures for recording, storing, and auditing test results? - Yes\
+Is the risk assessment considered when planning validation (verification) activities and the degree of testing required? - Yes\
+Are validation (verification) plans prepared and approved prior to execution? - Yes\
+Do validation (verification) plans document the validation (verification) approach and deliverables? - Yes\
+Do validation (verification) plans document the validation (verification) roles and responsibilities? - Yes\
+Do validation (verification) plans document the risk mitigation approach per Annex 11(1)? - No\
+Do validation (verification) plans document the procedures for validation (verification) documentation and test failures? - Yes\
+Do validation (verification) plans document the procedures and training required to ensure intended use? - No\
+Do validation (verification) plans document the acceptance criteria? - Yes\
+Are test plans or protocols prepared and approved? - Yes\
+Do the test plans or protocols identify the entities to be tested? - Yes\
+Do the test plans or protocols identify the type of testing to be performed? - Yes\
+Do the test plans or protocols document the testing schedules and responsibilities? - Yes\
+Do the test plans or protocols specify documentation requirements and acceptance criteria? - Yes\
+Do the test plans or protocols specify test incident or failure handling and resolution? - Yes\
+Do the test plans or protocols describe the testing approach including as needed: normal case, invalid case, repeatability, performance, load, and structural conditions? - Yes\
+Do the test plans or protocols specify the test data required for the testing? - Yes\
+Can tests and acceptance criteria be mapped back to specifications? - Yes\
+Is regression testing performed? If yes, please note the conditions where it would be performed - Yes (Regression testing is performed on all features at regular intervals)\
+Are software tools used to assist with testing or resolving software bugs? If yes, please identify - Yes (Salesforce automated testing is required for all apex code)\
+Are software tools validated or qualified depending on the risk level? - No\
+Is your organization able to supply validation (verification) test protocols? - Yes\
+Is your organization able to assist with site validation? - N/A (As per above, TWA cannot be responsible for Validation as Lockbox LIMS is a service which is specifically configured and customized according to Geneoscopy’s requirements after installation.)\
+Defect Tracking and Corrective Actions\
+\
+Are records maintained of all known problems for each revision including changes that were made to correct problems? - Yes\
+Are errors, bugs, and defects assessed and categorized by severity, urgency, and priority? - Yes\
+Does tracking include data errors, user errors, outages, and other issues not caused by system functionality? - No\
+Are there corrective action procedures for resolving software problems discovered in the testing process? - Yes\
+Are there corrective action procedures for resolving software problems discovered after product release? - Yes\
+Are defects trended and assessed to identify systemic problems? - No\
+Are there preventative action procedures for critical and systemic problems? - No\
+Are preventative actions tracked and managed to a timely completion including effectiveness analysis? - No\
+Is root cause analysis performed for critical incidents? - Yes\
+Is regression testing performed following corrective action to resolve defects? - Yes\
+Are solutions to reported defects integrated into new releases? - Yes\
+Change and Configuration Management\
+\
+Are changes to the system documented, authorized, and performed according to a defined procedure? - Yes\
+Are changes assessed for impact and risk that the changes may impose on existing system functionality? - Yes\
+Are system requirements and design documents updated when changes are made? - Yes\
+Is there documentation that changes to the system have been made according to the updated system design? - Yes\
+Are the software changes evaluated to determine the extent of revalidation and regression testing required? - Yes\
+Is there a software version control program? - Yes\
+Can previous versions of the code be recreated? - Yes\
+Are there policies to manage and protect source code, programs, and configuration settings? If yes, please note who has access - Yes (The product management team has access to the Github source code repository and the managed package Salesforce organization containing configuration settings)\
+Is a configuration tool used? If yes, please identify - No\
+Archival and Disaster Recovery\
+\
+Is there a schedule for backup and storage of the source code? - Yes\
+Is there a process for archiving of the source code? - No\
+Are there off-site storage arrangements for backup and archival data? - Yes\
+Are executable objects and application configurations protected from loss? - Yes\
+Are data and electronic records protected from loss? - Yes\
+Archival and Disaster Recovery (continued)\
+6. Is there a schedule for backup and storage of data and electronic records? If yes, what is the backup frequency? - Yes (High-Availability is provided by failover & site-switching infrastructure which can remediate any single outage.)\
+7. Is the backup process validated? - Yes\
+8. Is the accuracy of the backups and archives periodically checked? - Yes\
+9. Are record retention practices adequate to enable accurate and ready retrieval throughout the records retention period? - Yes\
+10. Is there a disaster recovery plan? If yes, how often is the plan executed: Click or tap here to enter text. - Yes\
+11. Are there disaster contingency or business continuity procedures for critical systems? - Yes\
+12. Are there arrangements for code to be held in escrow in case of business failure? Comment: If such arrangements are a blocker for adoption, please let TWA know. - No\
+\
+Security\
+\
+Is there an authorization list of personnel who have access to source code and executables? If yes, how is access authorized: Access is approved and controlled by the product team - Yes\
+Is the authorization list of personnel who have access to the system reviewed? If yes, how often: Click or tap here to enter text. - No\
+Is there an adequate security system to prevent unauthorized modification of source codes, builds, and distribution copies of software? - Yes\
+Are the facilities adequately secured against unauthorized entry? - Yes\
+Is there a documented authorization list for facility entry? - No\
+Is there a procedure for granting, changing, and deleting user access? - Yes\
+Does the user access procedure include verification of training? - No\
+Are records of user access changes created and retained? - No\

@@ -1,0 +1,101 @@
+\We can build validation rules to ensure that orders are valid and have all required data present. We can easily generate notifications to the CRM user since we are installed in the CRM.
+\Users can easily create an order in Lockbox LIMS from an Opportunity (or other record) in the CRM since we are installed inside the CRM. Approvals can be designed as required. Interface to SAP/Vision requires development.
+\Users with proper security can create lab orders and data can be checked using validation rules. Each field can provide end-user assistance. Users with both Salesforce CRM and Lockbox licenses can manually link lab orders with opportunities. However, there may options where we could configure automation such that the opportunity could be automatically selected.
+\Lockbox LIMS is installed inside Salesforce CRM, making the status sync easy to achieve. Statuses can be updated manually or automatically.
+\All changes (up to 100 fields per object) are audited by date, time, user, and old/new values (for most data types). All data update/deletion is controlled by role/profile based security.
+\Salesforce data can be displayed if needed inside Lockbox. 
+\Orders can automatically have defaults set based on Account, category, account type, etc from the CRM and this can drive downstream processes.
+\Since Lockbox LIMS is installed in the Salesforce CRM, we can easily configure automation to update fields in the CRM based on status changes in Lockbox.
+\We can create customized fields for any types of grouping. Based on these picklists, the user can be presented with different fields to fill in, different options for next steps, and pre-configured automated process can automatically launch. Values can be defaulted based on data entered.
+\Validation rules can be added to prevent status advancement under specific circumstances (e.g., missing data or incomplete checklist).
+\Users with appropriate security can change the priority of specific orders. Field level security (such as starting an order) can be configured by role or profile.
+\Automatic approval submission processes can be configured that require specific steps to proceed.
+\Orders can be assigned to individual users or assigned to queues formed based on role/skill type.
+\We can build validation rules to ensure that orders are valid and have all required data present.
+\Since Lockbox LIMS is installed in the Salesforce CRM, we can easily configure automation to update fields in the CRM. Programming will be required to interface with SAP, Vision, D3.
+\All changes (up to 100 fields per object) are audited by date, time, user, and old/new values (for most data types). All data updating is controlled by role/profile-based security. Custom order numbers can be configured such that the number changes upon closure.
+\Approval routing process can be automatically configured based on specific data changes. Users can also manually route for approval. CRM users can automatically trigger automation inside Lockbox LIMS since Lockbox LIMS is installed inside Salesforce CRM.
+\Users can easily drag and drop files onto any record in Lockbox. However, be aware that storing a lot of uncompressed data files (e.g., BMP, MOV) could reach data limits, so these files might be better stored in an alternative data structure (e.g., AWS, Sharepoint) with a link. For storage limitations, see: https://help.salesforce.com/s/articleView?id=sf.admin_monitorresources.htm&type=5
+\Lab orders can be linked together and, with development, could be merged as well.
+\Connecting from a non-Salesforce system would require interface development. However, once this information is available inside Salesforce and Lockbox LIMS, it can easily be referenced and selected.
+\We can configure automation that adds specific tests based on customer data (e.g., industry segment). Data about existing templates can be loaded into Lockbox LIMS as a part of the data conversion.
+\Since Lockbox LIMS is installed inside the Salesforce CRM, information from the CRM can easily drive processes/data inside Lockbox LIMS or be visible inside Lockbox LIMS. Test rules can be configured inside Lockbox LIMS.
+\Protocol Execution automatically tracks start and end times. Additionally, custom time tracking functionality could be added where time is linked to Orders, Customers, activity category, etc.
+\New picklists (such as prioritization) can be added to any object and used throughout Lockbox LIMS.
+\We natively support integration with Zebra and Dymo printers. Other printers are supported using Bartender. Labels can include barcodes, QR codes, human readable text, and automatically added information from Lockbox LIMS or Salesforce CRM.
+\Files can be added to any record in LIMS. Files can be versioned. Detailed line-by-line change management of documents should be maintained in a separate system. Documents have the confidentiality of the records they are associated with by default.
+\Security can be configured by role, profile, and location. Security is inherited by child records. Blacklist and whitelist configurations can be set up.
+\We support projects, milestones, scheduling. However, we don't support Gantt charts or have specific functionality around agile vs classic project management. Lockbox LIMS could connect with full project management software via API.
+\Experiments can be configured and used in Lockbox LIMS. This includes defining methodology, actions, data fields, quality measures, quality gates, and instructions. Links can be provided to standard and regulations that are on the corporate intranet or public internet.
+\Experiments can be assigned to orders and validation can be added to dictate when this is allowed.
+\Lockbox LIMS supports phones, tablets, and computers using the Salesforce Apps available for these different platforms.
+\Rules can be configured inside Lockbox LIMS. A Hazard Database can be created inside Lockbox LIMS or as an external link. Best practice data can be incorporated from external AI/ML tools, data warehouses, etc.
+\Experiments and their variables and settings are configurable in Lockbox LIMS. Automation can be configured in Salesforce Flow to assist with this process.  Additionaly automation may require development.
+\We can configure automation that adds specific tests based on customer data (e.g., industry segment).
+\The Find Inventory and Scan Inventory functionality within Lockbox allows users to search for and select raw materials and track their usage. These materials can have linked technical data and safety sheets or any other relevant information. This can be automatically and continually refreshed from SAP/Vision using an interface, to be developed.
+\We can configure the ability to create new raw material records in Lockbox LIMS and then interface the request to SAP while allowing its continued use, with a reverse function that cleans up the data in Lockbox LIMS when it's formalized in SAP. Creation of new materials in this fashion can be configured to require approval by the lab manager.
+\We can configure standard and target values and use formulas to highlight variations.
+\Picklist fields can be added to any object to document things like whether they are successful. Additionally, automation can be created to select this automatically. Reports and automated reminders can be configured.
+\Data can be interfaced from SAP to Lockbox LIMS so these formulas can run with real-time data.
+\Experiments can be versioned, changes are tracked (up to 100 fields per object) by person, date/time, and old/new values. Validation rules can be configured to require new baselines for specific types of changes.
+\An interface can be configured to meet this requirement.
+\Certificates can be stored and attached to records in Lockbox LIMS.
+\We recommend doing this in a third-party tool that could link data to/from Lockbox LIMS.
+\This is standard in Lockbox LIMS Protocol Execution with Inventory Management.
+\Recipes can standardly link to each other and be designated as master recipes.
+\All objects within Lockbox LIMS can have links to other objects.
+\Users can choose to "follow" a recipe and see changes.
+\An interface can be configured to connect Lockbox LIMS and SAP data regarding recipes and production runs.
+\Lockbox LIMS Read-Only or External Department users can have portal access. Relevant data can be interfaced between Lockbox LIMS and SAP.
+\All record access is configurable.
+\All recipes can be linked in a parent-child relationship to others.
+\Information from SAP can be interfaced into Lockbox LIMS for this purpose.
+\Data can be captured on a Recipe regarding it's status of Lab or Production, success/failure roll up metrics, etc.
+\Samples can be linked to all other objects in Lockbox LIMS. It can be configured to automatically take specific actions on creation or update based on specific criteria. Samples can be linked to external records, such as in SAP.
+\Lockbox LIMS has standard functionality for linking aliquots and derived samples to their parent sample records.
+\All information regarding the current state of a sample, location, and history is tracked within Lockbox LIMS for easy access. Data can be interfaced from other systems, development may be required.
+\Account records can be configured to require specific samples or have other requirements and these can be displayed during the ordering process.
+\Samples all have unique IDs and barcodes. Barcodes can be printed from Lockbox LIMS using an optional Zebra add-on. Lockbox LIMS includes a robust 5 tier storage heirachy that can be used and customized as needed for each storage type, location, etc. Complex disposal rules could be configured, or simple instructions can easily be noted per record.
+\Lockbox LIMS is installed in your Salesforce CRM and therefore benefits from Einstein Search functionality that allows users with appropriate access to search across all data within Lockbox LIMS, with search results being personalized based on how the individual user interacts with Lockbox LIMS. For more details, see https://help.salesforce.com/s/articleView?id=sf.search_map.htm&type=5
+\All data captured in Lockbox LIMS is automatically searchable by users with appropriate security.
+\Lockbox LIMS can easily be extended with custom fields for any object. This can be done by trained Peter/Lacke administrators. All fields are included in search.
+\Versions of experiments are stored as separate (and linked) protocol records. All records across all versions are searchable.
+\Specific apps, list views, reports, views, and other tools can be created such that different users see the data they need when they need it.
+\Einstein Search uses AI to search results. Third Wave Analytics is exploring other uses for AI and LLM in Lockbox LIMS.
+\Access is controllable at the object, field, and record levels. This allows data to be as confidential as required.
+\Einstein Search uses AI to search results, however, it doesn't currently support fuzzy searches or Natural Language Searches within Lockbox LIMS.
+\Managers can publish specific List Views per object. Additionally, users can define their own. They can also share (with correct permissions). List Views and Reports allow users to filter the data they are seeing as needed.
+\Lockbox LIMS includes a robust suite of Reporting and Analytics capabilities from Salesforce. Additionally, data can be transferred to external BI tools for further analysis. This link provides more information about tools available inside Lockbox LIMS: https://help.salesforce.com/s/articleView?id=sf.analytics_overview.htm&type=5
+\Formula fields can be set up to identify deviations from accepted norms. Additionally, reports can be created to alert management of significant deviations, trends, etc. These can be subscribed to for automatic delivery.
+\Tasks can be created in Lockbox LIMS with start dates, end dates, and progress information, and linked to any object within Lockbox LIMS. Different task types can be configured. They can also be automatically created in Salesforce CRM or via interface in other systems.
+\Tasks can be assigned to Lockbox LIMS or Salesforce CRM users. Additionally, they can be assigned to queues which could include non-users.
+\Tasks can be created automatically based on specific criteria using Salesforce Flow automation.
+\Tasks can be created automatically based on specific criteria using Salesforce Flow automation which can use logic based on all data in Lockbox LIMS and Salesforce CRM.
+\Users can schedule instruments using Lockbox LIMS Instrument Management, allowing individual users to make reservations and everyone to see when the instrument is available. The calendar view automatically shows all available times to select an alternative.
+\Automatication can be configured with Salesforce Flow to assign tasks specific priority, due dates, etc. based on any field inside Lockbox LIMS or Salesforce CRM.
+\All users can see their assigned tasks. Those with access to specific list views can see tasks assigned to others as well. Dashboards can be created to provide a high-level overview of all task information.
+\Salesforce scheduling can be synced with Outlook.
+\All data can be reported on dashboards and records are generally a clickable link allowing the user to obtain further information. See the following link for more information about Reports and Dashboards: https://help.salesforce.com/s/articleView?id=sf.analytics_overview.htm&type=5
+\All scheduling information in Lockbox LIMS Instrument Management is reportable and displaying on dashboards. Users can easily see usage both future and historic to identify bottlenecks, usage patterns, etc.
+\Users can see all required maintenance and calibration with the Lockbox LIMS Instrument Management. It can also trigger notifications. Lockbox LIMS can communicate via API with other API enabled devices or potentially via middleware with non-API devices.
+\Using Salesforce Flow, specific deviations can trigger immediate alerts. Additionally, reports can be emailed on a regular basis to make management aware of less critical deviations.
+\We can configure specific dashboards for different users and roles. Users with appropriate security can create new dashboards.
+\Reports can be created using standard Salesforce Reporting functionality. If pixel-perfect PDF reports are needed, these templates can be defined per customer, order type, or other factors, and developed. Generated PDFs are tamper-proof. Additionally, Salesforce Snapshot can be used to create point in time Snapshots of standard Salesforce Reports.
+\Specific pixel-perfect PDF reports can be developed. Operational reporting is standard with Salesforce reporting tools.
+\Reports can be created using standard Salesforce Reporting functionality and can be filtered as needed.
+\Reports can be created using standard Salesforce Reporting functionality and can be filtered as needed.
+\Reports can be created using standard Salesforce Reporting functionality and can be filtered as needed with test results linked to customer, order, product, methodology, protocol, etc. Results can be exported and stored. Snapshot reporting allows for the maintenance of point-in-time data. See the following link for more details: https://help.salesforce.com/s/articleView?id=sf.data_about_analytic_snap.htm&type=5
+\Reports can be created using standard Salesforce Reporting functionality and can be filtered as needed.
+\Lockbox LIMS supports API integrations with third-party software that also has API functionality
+\Lockbox LIMS is installed directly in your Salesforce CRM. No interface is required and data from the CRM can automatically drive action in Lockbox LIMS.
+\Lockbox LIMS supports API integrations with third-party software that also has API functionality
+\Lockbox LIMS supports API integrations with third-party software that also has API functionality. Connection to SAP can also be configured using an iPaaS solution.
+\Lockbox LIMS supports API integrations with third-party software that also has API functionality
+\Lockbox LIMS supports API integrations with third-party software that also has API functionality. Postmaster documentation is available for Lockbox LIMS. Some Swagger documentation is available for Salesforce more broadly.
+\Server status information is provided by Salesforce at status.salesforce.com. Salesforce Event Monitoring can be licensed as an add-on and provides additional information about usage.
+\Lockbox LIMS is installed directly in your Salesforce CRM and will benefit from the backup system you have in place for your Salesforce CRM. Manual or scheduled backups can be configured using free solutions. More user friendly third-party tools can also be contracted, such as OwnBackup.
+\Lockbox LIMS updates do not generally require downtime. Salesforce updates occur in the middle of the night and generally require very minimal downtime.
+\Lockbox LIMS is installed in your Salesforce CRM and benefits from all available and configured AD integration. Blacklist and whitelist sharing approaches are available.
+\All records have unique IDs and foreign key connections to other records.
+\An interface can be configured between Lockbox LIMS and SAP and different actions can occur depending on branch.
+\Lockbox LIMS supports API integrations with third-party software that also has API functionality. Middleware might be required to connect with instruments.

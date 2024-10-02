@@ -1,0 +1,100 @@
+Does your company have a written Quality Manual/Plan? - Yes\
+Would your company allow on-site Quality System audits by external companies? - Yes\
+Are there established procedures for the management review? - Yes\
+Does your Quality Management System undergo Management Reviews at regular defined intervals to measure its effectiveness and suitability? - Yes\
+Are the dates and results of the Management Reviews clearly documented? - Yes\
+Are Internal Audits conducted to ensure that the Quality Management System is compliant with established procedures? - Yes\
+Are there established procedures in place for the documents control? - Yes\
+Do documented procedures undergo a review and approval process prior to issuance to ensure they meet all established requirements? - Yes\
+Are approved documents/procedures available at all locations for which their use is intended? - Yes\
+Are documents and procedures controlled with revision numbers? - Yes\
+Are changes to documents reviewed and approved in a similar manner as the original review and approval process? - Yes\
+Has management defined the interrelation of all personnel who manage perform and verify all work affecting quality and ensured the independence and authority necessary to perform all required tasks? - Yes\
+Are job descriptions written for all positions? - No\
+Are there established procedures for identifying training needs and providing the required training to personnel? - Yes\
+Are records of education, training, skills, and experience maintained for all employees? - Yes\
+Are employees made aware of the relevance and importance of their activities and how they contribute to the achievement of quality objectives? - Yes\
+Are Manufacturing personnel trained to specific industry workmanship criteria & standards? - No\
+Do you have a Design Control procedure? - Yes\
+Are there design and development plans that describe design and development activities and define responsibilities for implementation? - Yes\
+Are there established procedures to ensure the design requirements are appropriate and address the intended use of the device (Design Input)? - Yes\
+Are there established procedures for defining and documenting design output for evaluation of conformance to design input requirements? - Yes\
+Are formal documented design reviews conducted at appropriate stages of the device’s design development? - Yes\
+Are there established procedures for validation of the device design? - Yes\
+Are your suppliers evaluated based on their ability to meet specified requirements including quality? - No\
+Do you perform on-site Quality Management System audits of your suppliers? - No\
+Do you send Quality System Self-Survey Questionnaires to suppliers to help you in the evaluation process? - No\
+Do you provide any type of “scorecard” to your suppliers regarding their performance? - No\
+Are there established procedures for acceptance of incoming materials/products? - No\
+Do you establish and maintain data which describe the specified requirements including quality requirements for purchased or otherwise received products and services? - No\
+Do you have procedures in place requiring notification from the supplier upon key changes to the product/subcontracted service? - No\
+Are your contractors or consultants evaluated based on their ability to meet requirements including quality? - No\
+Is there a risk-based approach in place for process management? - No\
+Do you have procedures in place for the risk management of the manufacturing processes? - No\
+Are SOPs/Instructions in place describing required controls and monitoring of production processes to ensure product/service complies to specifications? - No\
+Are deviations from a process or specification requirement documented and approved? - No\
+Do your final acceptance records contain: Acceptance & Reject criteria activities performed date performed and who performed them? - No\
+Where environmental conditions could have an adverse effect on product quality are there procedures in place to control environmental conditions? - No\
+Do you have clean room(s) for mfg./filling/other needs? - No\
+Does production and process equipment undergo qualification (IQ / OQ / PQ)? - No\
+Is there an established Preventive Maintenance program in place for process and production equipment? - No\
+Are logbooks or other records maintained to record maintenance activities including date and individual(s) performing maintenance? - No\
+Are procedures in place for identifying product through all stages of receipt, production, and distribution to prevent cross-contamination and mix-ups? - No\
+Are all finished manufactured products traceable by lot or batch number? - No\
+Are statistical/other sampling plans used for the acceptance and rejection of in-process and final product? - No\
+Are Inspection/Test results that are out of specification (OOS) documented, investigated, and re-tested? - No\
+Are there procedures in place to ensure that all inspection, measuring, and test equipment is calibrated, inspected, and maintained? - No\
+Do these procedures specify provisions for identification, handling, preservation, and storage of monitoring and measuring devices and equipment? - No\
+Do these procedures include specific directions and limits for required accuracy and precision? - No\
+Do these procedures describe how to address potentially adversely affected product should an Out of Tolerance (OOT) condition be found? - No\
+Are calibration standards used for inspection, measuring, and test equipment traceable to national or international standards (i.e. NIST)? - No\
+Do all inspection, measuring, and test equipment contain identification numbers with calibration dates and individual performing calibration? - No\
+Are calibration records stored and kept on site? - No\
+Are there established procedures to control product/service that does not comply to required specifications? - Yes\
+Does the procedure address the required identification, documentation, evaluation, segregation, and disposition of non-compliant product/service? - No\
+Are there established procedures for the rework of non-compliant product/service including re-test and re-evaluation of product/service after rework? - Yes\
+Are there established procedures for implementing Corrective Action and Preventive Action (CAPA)? - Yes\
+Are there procedures in place to ensure that mix-ups, damage, deterioration, contamination, or other adverse effects to product/service do not occur during handling of product/service? - No\
+Do you have temperature sensitive storage capabilities? - No\
+Is obsolete, rejected, or deteriorated product properly identified with its reject condition then segregated from any acceptable product to ensure that it is not distributed? - No\
+Where product quality deteriorates over time is product properly rotated to ensure expired material is not distributed? - No\
+Are there procedures in place for receiving, reviewing, and evaluating customer complaints? - No\
+Are necessary corrective actions and replies to the customer complaint given without delay? - Yes\
+When a designated complaint originates at a separate site other than the manufacturing establishment, are you able to investigate and provide appropriate responses to complaint? - Yes\
+Is there a procedure established for customer feedback analysis? - Yes\
+Are Product Life Cycle considerations/plans in place? - No\
+Are Continuous Improvement tools and strategies utilized by your company (i.e. LEAN / 6 Sigma / Other)? - No\
+Does your Supply Chain strategy get reviewed on a regular basis? - No\
+Are there any other opportunity for improvement you would like to share with us at this time? - No\
+Are there established procedures (documented information) for implementing Corrective Action and Preventive Action (CAPA)? - Yes\
+Do these procedures (documented information) address the following requirements: Immediate Action required and taken? - No\
+Root Cause Analysis required and performed? - No\
+Identifying the action(s) necessary to fully correct and prevent recurrence of the non-conformity? - No\
+Implementing and recording any changes to procedures (documented information) and methods to correct and help prevent quality problems? - No\
+Are there procedures (documented information) in place to ensure that mix-ups, damage, deterioration, contamination, or other adverse effects to product/service do not occur during handling of product/service? - No\
+Do you have temperature-sensitive storage capabilities? - No\
+Is obsolete, rejected, or deteriorated product properly identified with its reject condition then segregated from any acceptable product to ensure that it is not distributed? - No\
+Where product quality deteriorates over time is product properly rotated to ensure expired material is not distributed? - No\
+Are there procedures (documented information) in place for receiving, reviewing, and evaluating customer (interested party) complaints? - No\
+Are necessary corrective actions and replies to the customer (interested party) complaint given without delay? - Yes\
+When a designated complaint originates at a separate site other than the manufacturing establishment, are you able to investigate and provide appropriate responses to complaint? - Yes\
+Is there a procedure (documented information) established for customer feedback analysis? - Yes\
+Does this procedure (documented information) include customer satisfaction survey analysis? - Yes\
+Are Product Life Cycle considerations/plans in place? - No\
+Are Continuous Improvement tools and strategies utilized by your company (i.e., LEAN / 6 Sigma / Other)? - No\
+Does your Supply Chain strategy get reviewed on a regular basis? - No\
+Are there any other opportunity for improvement you would like to share with us at this time? - No\
+Are there procedures in place for ensuring that the quality requirements for externally provided products and services are established and maintained? - No\
+Are there procedures for the periodic re-evaluation of suppliers to ensure they continue to meet requirements? - No\
+Is there a procedure for managing corrective actions in response to supplier performance issues? - No\
+Are there established procedures for controlling and tracking the status of externally provided products and services? - No\
+Does your quality system include provisions for maintaining and reviewing records of all supplier evaluations and actions taken? - No\
+Are suppliers notified of changes in quality requirements as they occur? - No\
+Do you have a system for assessing and addressing risks associated with externally provided products and services? - No\
+Are there procedures in place to ensure that purchased products meet specified purchase requirements prior to their use or integration into your products? - No\
+Are records of the verification of purchased product maintained? - No\
+Are there established procedures for the acceptance of incoming materials/products? - No\
+Are statistical sampling plans used for the acceptance and rejection of incoming product? - No\
+Are there established procedures for managing non-conforming product from external sources? - No\
+Are there procedures in place for periodic review and assessment of supplier performance? - No\
+Are there established procedures for the disposition of rejected materials/products from suppliers? - No\

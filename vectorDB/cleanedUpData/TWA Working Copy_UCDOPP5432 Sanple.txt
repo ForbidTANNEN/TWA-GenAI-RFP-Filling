@@ -1,0 +1,111 @@
+A Laboratory Information Management System is required. - Yes - Additional Info provided in Appendix A\
+The system MUST support individual user logins. - Yes\
+The system MUST allow the creation of LIMS administrator roles. - Yes\
+The user management functionality MUST provide the administrator the ability to define and implement roles, user groups, and access rights to users. - Yes\
+The system SHOULD support self-service password management and recovery. - Yes\
+The system MUST allow the administrator to assign and manage user access only to specific sections of the LIMS, corresponding to their activities/sites. - Yes\
+The system SHOULD allow approved users by the administrator, to have access across multiple scientific units/sites. - Yes\
+The system MUST ensure that users only have access to system functions, results, and reports for which they have the corresponding rights to do so. - Yes\
+The system MUST provide a comprehensive audit trail on any create/amend/delete action that includes user details and a time and date stamp. - Yes\
+The system SHOULD provide the ability to require additional or second approval for certain tasks. - Yes\
+The system SHOULD provide functionality that supports good user management security policies (e.g., removal of inactive users and checking access rights for users). - Yes\
+User groups such as teams, work units, and service groups SHOULD be able to be nested. - Yes\
+The system SHOULD be capable of handling the use of special characters in relation to Irish, German, French, Spanish, names etc. - Yes\
+University College Dublin will provide the hosting service (cloud) for the LIMS data. The system MUST be a 100% web-based hosting service and not locally installed on PCs. - Yes - No needed for UCD to host the software\
+Outline the type of user licensing within your system (e.g., annual, or perpetual). - Yes - Named user licence with annual subscription.\
+The system SHOULD have the ability to support a minimum of 10 active users logging in simultaneously at any one time, in addition to 3 named users able to login independently of the 10 active users. - Yes\
+Access to the system SHOULD require a valid user account - have the ability to remove the login privilege from user accounts. Lockout after a specified number of failed attempts. - Yes\
+Ability to define period of inactivity after which session is disconnected and license freed for use by other users on system (in case of user license restriction). - Yes\
+Suppliers SHOULD specify ancillary IT, network, infrastructure requirements, or system elements that have been assumed to be available by the laboratory sites. - Yes - Connection to Internet, Device that can access the internet (laptop, desktop, phone (android/iphone), tablets, iPad)\
+The system SHOULD seamlessly integrate with MS Office Applications both on-premise and 365 (Word, Excel, PowerPoint). - Yes - Lockbox/Salesforce has an integration right in Outlook. The integration is 100% cloud-based with no software to push, install, or maintain.\
+The design of the system MUST allow for the division of laboratory sites, and stages of processes. - Yes\
+Please outline any common image file types that are not compatible with the system. - Yes - All the common image file types are supported by the system. Images can be uploaded or dragged and dropped in the file section.\
+The system MUST allow the cancellation of a registered sample subject to user permissions. - Yes\
+The system MUST assign a unique identifier (internal) for all samples entered into the LIMS system, making sure that no unique identifiers are the same between different sites. - Yes\
+The system MUST be able to assign multiple Study ID (alphanumeric codes) to be associated with 1 sample if necessary. - Yes\
+The system SHOULD be able to support The Standard PREanalytical Code (SPREC). - Yes\
+The system MUST be capable of handling several studies and associate the samples corresponding to each study (via the unique identifier and study ID). - Yes\
+The system SHOULD allow the management of several sample groups as ''one batch''. - Yes\
+The system SHOULD support batch changes (e.g., copy down, incremental fill, in things like sample processing start time, centrifuging time, freezing time/date, etc.) that are easily reflected across multiple groups samples/results. - Yes\
+The system SHOULD cater for multiple associated submissions being received in a staggered manner and therefore requiring that a new sample processing pipeline could be created at any point. - Yes\
+The system SHOULD allow for the assignment of criteria flags at the point of sample collection/ registration. - Yes\
+The system SHOULD allow users to schedule work associated with a sample(s), or to plan testing activities in advance. - Yes\
+The system SHOULD record the user performing each step in the workflow and allow multiple users to be recorded on the same workflow if they are working together on the same sample in that workflow. - Yes\
+The system SHOULD have the ability to assign different tests to any sample(s), whilst retaining linkages with existing results generated previously. - Yes\
+The system SHOULD be able to record the user processing the samples/testing at each step of the process. - Yes\
+The system SHOULD permit users to change analysts at any point of the processing pipeline/testing. - Yes\
+The system MUST be able to create several aliquot numbers from any type of sample. - Yes\
+Is label design available/built-in to the system? If yes, please go to the Specification A39, if no, please go to Specification A40. - Yes - We support Out the Box Dymo and Zebra Printers, but other printer manufacturers can integrate them through API or CSV file upload.\
+If the system is able to produce/design labels, does it have the capability to generate multiple label formats (barcodes, QR codes)? - Yes\
+Is the system able to connect to an external printer (e.g., Zebra, Dymo) to print the labels directly? - Yes\
+Please indicate if a third-party software is needed in order to design or print labels and specify the name of the software. - Yes - Lockbox supports printing with Zebra printers. Templates for these labels are text-based (ZPL, Zebra Programming Language) and can be designed without third-party software. Third Party software such as Zebra Designer can be used if a graphical interface is preferred. Once templates are designed, no third party software is required for printing via Zebra Cloud Print. Printing is also supported with Zebra Browser print which requires the Zebra Browser print application to be installed.\
+Is the system able to integrate to a third-party software for label design/printing (e.g., Bartender)? - Yes - Lockbox is built on a relational database which supports standard REST APIs. This database can be accessed and integrated with a wide variety of systems.\
+The system SHOULD be able to integrate certain fields of the client’s choice into the unique QR code that will be displayed on each sample tube. - Yes\
+The system SHOULD have the ability to view the status of each sample throughout the processing pipeline (e.g., in process, completed, authorized). - Yes\
+The system MUST support regular auto-save functionality to ensure no inadvertent loss of data. - No - The information is on screen until the user clicks Save.\
+The system MUST be able to share worksheets between users. - Yes\
+The system MUST be able to offer collaborations between users. - Yes\
+The system MUST have the ability to connect to external applications through REST-API. - Yes\
+The system MUST be able to integrate the client's chosen clinical database (REDCap) through a REST application programming interface (REST-API). - Yes\
+Tenderer MUST supply a threat model and security architecture for how information is backed up by the supplier and made available to super admin users should recovery/disaster management be required. - Yes - Process in place etc.\
+Vendors MUST disclose any IT Security breaches involving the proposed software or hosted service or its components in the last 12 months. - Yes\
+Please describe the process by which the client will be alerted of intrusions or malicious events e.g., a data breach. - Yes - As for the TWA Quality Management system, we have a breach notification process in place.\
+The client expects to retain ownership of the data at all times including input and output data. - Yes\
+Please provide any additional available material evidence of the security controls in place for the hosted service. - Yes\
+How and in what format will the client’s data be returned after termination? - Yes - Zip file (CSV files)\
+What data does the vendor retain after the termination? - No - None\
+What happens to the data if the client becomes insolvent? - Yes - Deleted\
+The system MUST permit and initiate appropriately the registration of a sample electronically before the physical sample arrives at the laboratory facilities. - Yes\
+The system SHOULD facilitate the simple management of sample pooling with an appropriate coding system to guide the pooling process (parent-child relationship) and subsequent retrieval and follow-on testing. - Yes\
+The system SHOULD provide a logical structure to report pooled results. - Yes\
+The system SHOULD provide sample storage functionality, allowing for the details of storage locations to be captured and the ability to log the entry and exit of samples from said storage locations. - Yes\
+The system SHOULD provide the ability to create criteria per sample type and to alert a user when they have selected an incompatible storage facility for the type of sample submitted. - Yes\
+The system SHOULD allow changes across multiple groups of samples in terms of cancellation, deletion, or addition of experiments and addition of notes (keeping the appropriate audit trail). - Yes\
+The system SHOULD support the linking of samples based on several parameters. - Yes\
+The system SHOULD have the ability to group analytical methods to create a "Test list" which may be assigned to a sample or associated with a sampling location. - Yes\
+The system SHOULD allow the recording of sample pre-treatments such as heat inactivation and centrifugation to be recorded per test, per test sample, and per worksheet. - Yes\
+The system SHOULD provide the ability to enter and test samples for training purposes. Any items that are created for training purposes SHOULD be clearly identifiable and excluded from reports and aggregate data. - Yes\
+The system SHOULD allow for the sample requisition information associated with a sample to be reviewed at the sample reception stage. - Yes - Lockbox support validation rules which can be configured based on the Customer’s requirements.\
+The system MUST be capable of accepting a readable (CSV, XML) file to pre-register samples. - Yes - Lockbox Import capability allows the importing of CSV file (comma or semicolon separated) and can be set up to skip rows that include data that do not need to be imported.\
+The system MUST be able to accept uploaded test/assay results via a CSV file for a batch of samples. - Yes - See above\
+The system MUST be able to connect results from different sample visits to each other when reviewing new or old test/assay results. - Yes - Tests are connected to the Sample, procedures and step and can be reviewed in a list view.\
+The system SHOULD have the ability to define multiple configurable templates for the manual registration of various sample types which prompt the user for required information pertinent to the sample type, identifying mandatory fields and appropriately filtering drop-down lists. - Yes\
+The system SHOULD have the ability to modify the number of samples received at any stage of the sample processing. - Yes\
+The system SHOULD have the ability to identify those samples pre-registered but not received and options for updating the status of this, so it no longer appears as pending receipt but is recorded as a sample which was missed as opposed to being cancelled. - Yes\
+The system MUST be able to keep a record of a ‘’sample destruction log’’ apart from the main laboratory log where access to these destructed samples should not be accessible to all user types. - Yes\
+It SHOULD be possible to create records of non-testing activities such as disposal, transit, or archival. - Yes\
+The system SHOULD support the appropriate handling of all non-conforming works as defined by the user. - Yes\
+Please outline how your solution complies with or supports the following standards: Electronic signatures - FDA 21 CFR Part 11 Compliant, GDPR, European Union Reference Laboratories (EURL), Eurostat guidelines, ALCOA data integrity compliance, SNOWMED CT, ISBER. - Confirm (Yes / No) - We have a QMS modules that can assist in achieving all the regulatory required outlined in the standards mentioned in the requirements (extended audit trail, versioning control, staff training records, inventory management, electronic signature etc).\
+The system SHOULD allow for test controls and their results to be managed differently than ordinary samples within the product and for all test controls to be clearly identifiable from normal results but available separately for aggregate analysis on trends, usage volumes, and other metrics. - Yes\
+Please outline and detail how the LIMS will facilitate the specification and documentation of workflows and standard operating procedures as required for ISO accreditation (20387). - Confirm (Yes / No) - User named licence model, Access based on Role and Responsibility, Staff Training, SOP documentation, Accurately label inventory items and track their consumption, Audit trail, Incidence logs, Manage equipment, schedule their calibration & manage maintenance data, Tracking Samples using unique IDs, Inventory and Sample Storage location, Maintain Chain of Custody during the Sample lifespan.\
+The system MUST have the capacity to manually upload results by uploading files (CSV) and direct input (data entry). - Yes\
+The system SHOULD have the capacity to integrate results from a 96 or 384 well plate format (with sub-aliquot IDs). - Yes\
+The system MUST have the capacity to link samples (sub-aliquot ID) to specific results (e.g., Concentration of a particular analyte). - Yes\
+The system SHOULD support a wide and varied range of result formats. - Yes\
+The system MUST allow for the deletion of results. Any deletion of results must incur the appropriate recording to the system audit trail with the appropriate level of authorization. - Yes\
+The system SHOULD have the option to display any previously completed results associated with a sample when additional results are being entered for the same sample. - Yes\
+The system SHOULD support the grouping of multiple results on the screen for result verification. - Yes\
+The system SHOULD allow exporting of results at individual and aggregate/grouping level, in formats such as Excel and PDF. - Yes\
+It SHOULD be possible to view and query a range of multiple results based on user criteria. - Yes\
+The system SHOULD support typical data manipulation shortcuts – copy-down, incremental fill etc for results. - Yes\
+The system MUST allow the user to search by parameters such as (Study, Study ID, Sex, Age, etc), and create a report based on this search. - Yes\
+The system SHOULD support the manual selection of samples, tests, and results for inclusion within reports through user-friendly interfaces. - Yes\
+The system SHOULD allow the reporting user to easily exclude particular result(s) from reports without cancelling or deleting those results on the system. - Yes\
+It SHOULD be possible to decide on the output format of the report (paper, PDF, word file, excel file) at the point of reporting. - Yes\
+The system SHOULD be capable of restricting selected roles from having reporting approval capability. - Yes\
+Please confirm that the client’s data and information will not be shared with any third party unless permission has been granted by the client. - Yes\
+The system SHOULD allow analysis data to be imported from popular office packages and allow second-level authorization or approval procedure on the imported data. - Yes\
+The system SHOULD allow any data imported to be linked to a sample, submission, or project. - Yes\
+The system MUST retain both the original and amended data for any record. - Yes\
+The system MUST ensure that it is easily recognizable to a user when a record has been previously amended. - Yes\
+It MUST be possible for administrators to access audit trail information at the individual and aggregate level. - Yes\
+The system MUST support audit trail/authorization at granular levels throughout the system e.g., visibility of usage at the aliquot level. - Yes\
+The system SHOULD allow users to enter free text information at any amend action. - Yes\
+The system SHOULD allow the user to delete a record from the screen while still retaining all information relating to the record as part of the audit trail. - Yes\
+The system SHOULD allow for any deleted records and associated commentary to be viewed subject to privileges. - Yes\
+The system SHOULD allow error messages to be logged and analyzed; providing administrators with the ability to view where errors repeatedly occur so that complicated tasks, poorly designed workflows, or bottlenecks in the system can be easily identified. - Yes\
+The system SHOULD provide comprehensive logging functionality that includes all user actions and data transfer fail/succeed/retries. - Yes\
+The system SHOULD support and manage the appropriate archiving for the following areas: Samples, Submission Forms, Workflows, Tests, Results. - Yes\
+The system SHOULD support a model of archiving the contemporary versions and generations of worksheets and reports used within a dataset alongside the data itself to allow an accurate system restore. - Yes - Lockbox can backup object data, including related records, files, and attachments. The user can schedule backup, set a custom schedule, or make a backup on demand.\
+The system SHOULD be able to store previously (inactive) conducted study data for a specified amount of time by the user. - Yes\
+In the future, we would like to have a built-in email delivery system. Is the system capable of this? - Yes\

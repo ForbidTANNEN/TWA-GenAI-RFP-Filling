@@ -1,0 +1,11 @@
+os
+uuid
+tiktoken
+langchain
+langchain-experimental
+langchain-openai
+pinecone
+tqdm
+vectorDB
+python-dotenv
+datetime

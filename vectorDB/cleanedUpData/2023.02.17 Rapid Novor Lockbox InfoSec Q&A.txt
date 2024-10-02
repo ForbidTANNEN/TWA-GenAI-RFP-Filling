@@ -1,0 +1,166 @@
+Question 1 What security controls (specifically to prevent attacks on data) does Third Wave
+Analytics have in place to protect against malware and other threats (Ex. DDoS
+mitigation, IDS) that may target your platform or customer data?
+A1 Third Wave’s Platform uses Salesforce as Data Processor/Controller, making Lockbox
+LIMS a combined solution with the Customer (in this case Rapid Novor) acting as the Data
+Fiduciary (responsible for data).
+Third Wave employees and contractors, as part of their job responsibilities, may have
+access to Customer data contained within Customer instances of Lockbox LIMS, although this
+is not explicitly required. As such, employees, subcontractors, and anyone delivering services
+on behalf of Third Wave are contractually obligated to understand and comply with all applicable
+policies, including Third Wave’s Information Security Policy IT-POL-5601 and Third Wave’s
+Information Security Roles & Responsibilities Policy IT-POL-5602.
+
+\
+
+Q2 What measures are in place when Third Wave Analytics employees are remotely
+accessing the company's networks and systems, more explicitly interacting with
+customers' data and platforms held on your LIMS system on Salesforce?
+A2 In addition to the Technical Safeguards listed above in A1, here are the highlights of
+some administrative controls mandated by Third Wave Policies applicable to remote access of
+Customer Orgs:
+- Taking physical receipt of sensitive data is prohibited, for example onto a Third Wave
+Team Member’s local HD. Exceptions to this policy have been reviewed by management
+and additional planning and protections were put in place to identify the specific means
+of transport, limit dissemination and access to such data at its destination, through to the
+deletion/destruction of such data at the completion of work.
+- Sensitive data is not to be shared via email, is not to be viewed during screen-sharing
+meetings, and generally is not to be interacted with unless explicitly required to perform
+the duties of the job. This applies to all members of all entities involved in the delivery of
+professional services.
+- No less than annual Information Security and HIPAA Training, including focus on
+protecting Customer information technology assets, including specific evidencing of
+acknowledging policy compliance.
+- Clean desk policy, avoiding over the shoulder reading of data, lock screens, maintaining
+physical and/or secure control of laptops at all times.
+- Periodic Access Reviews
+- HR led Team Member background and reference checks.
+
+\
+
+Q3 How are you ensuring the security of the company's cloud infrastructure
+(Salesforce)? What authentication and access control mechanisms have you
+implemented for your Salesforce environment, and how are they managed?
+A3 Third Wave utilizes Salesforce internally for several business critical functions. A
+highlight of authentication and access controls include common Salesforce configuration
+choices including:
+- Org.-wide MFA required
+- Session time-outs which force logout
+-Lock sessions to the domain in which they were first used
+- Enforce login IP ranges on every request
+- Click-jack protection
+- New User Link Expiration
+- Reasonable Password Policies including 90 day resets, complexity requirements, etc
+
+- Business appropriate sharing settings, use of profiles and permission sets
+- Periodic Access Reviews
+
+\
+
+Q4 How is Third Wave Analytics protecting against insider threats and assuring
+unauthorized access to sensitive data or systems does not occur?
+A4 Third Wave works to protect its data and systems, including Customer data and
+systems, from insider threats through close management and engagement of team members,
+periodic access reviews, least privilege, and where possible segregation of duties (SOD).
+Investigations would utilize system logs such as Field Audit Trail, Setup Audit Trail, Login
+History, and other detective control activities as applicable.
+
+\
+
+Q5 How is Third Wave Analytics ensuring that customer data handled by Third Wave
+Analytics is encrypted at rest and in transit, both on Salesforce and off?
+A5 Third Wave Team Members are obligated by policy to encrypt data at rest on their local
+HDDs using BitLocker for Windows or FileVault for MacOS. Transmission of sensitive data via
+email, ftp, and other insecure, non-encrypted methods are prohibited.
+
+\
+
+Q6 How is Third Wave Analytics ensuring that all partners and third parties that Third
+Wave Analytics uses to offer and develop their products are adhering to the same
+security standards as the company?
+A6 Lockbox LIMS is only available for purchase through Third Wave (‘offer”), and further we
+have not entered into any business relationships which would allow third parties to implement or
+develop on top of Lockbox LIMS (“develop”). In addition, all Team Members are required to sign
+a Third Wave business agreement which in all cases obligates such Team Members to comply
+with Third Wave policies and to act in accordance with Third Wave norms and values.
+
+\
+
+Q7 Does Third Wave Analytics have an appropriate incident response & disaster
+recovery plan in place in the event a security incident, breach, or disaster occurs?
+A7 Yes, as per Third Wave’s Breach Response Plan QA-SOP-2904 and Third Wave’s
+Business Continuity Backup Restore and Disaster Recovery Policy IT-POL-5600.
+
+\
+
+
+Q8 How do you (or do you have a plan) communicate with stakeholders, including
+employees, customers, and regulators, regarding cybersecurity practices, certifications,
+and incidents?
+A8 Please see Third Wave’s Breach Response Plan Section 7.13 which covers Method(s) of
+Notification.
+
+\
+
+Q9 What measures are in place to ensure compliance with applicable regulations,
+such as PHIPA, GDPR or HIPAA?
+A9 A combination of administrative, physical, and technical safeguards are in place to
+ensure compliance with such regulations. Prior responses cover many of the administrative and
+technical safeguards.
+Specific to Physical controls, here is a summary of those controls applicable to our Corporate
+Office at 7 Joost Ave Ste 201:
+- Alarm System
+- Door Locks (One key at the street level entrance and a different key for the door which
+acts as the entrance to Suit 201)
+- Clean Desk Policy
+It is noted that with the increase of work from home arrangements, further updates to policies,
+procedures, and training is required and planned to address this evolving risk.
+
+
+\
+
+Q10 What security certifications does the company (not individual employees) hold
+and how do they impact cybersecurity practices?
+A10 Third Wave does not currently hold any security certifications. The following is a
+summary of the information security & compliance professional experience of Third Wave’s
+Security Officer, Chris Gawronski:
+● Privately-Owned Global Optics Company:
+○ Led ISO 9000 Compliance efforts specific to Engineering and Design which
+contributed to passing an external audit.
+
+● Publicly Traded Global Analytical Instrumentation Company:
+○ Information Security Officer, responsible for securing company and Customer
+data along with reporting to the Audit Committee of the Board of Directors
+○ Head of Enterprise Applications, responsible for Sarbanes-Oxley Compliance
+Program and supporting External Financial Audits
+○ Head of Information Technology, responsible for influencing and enacting
+technology strategy globally
+■ Legal Discovery Technical Lead
+■ Collaborated with San Francisco FBI Field-Office on Information Security
+Awareness Training and On-going risk assessment.
+
+This experience, along with collaboration with other expert consultants, informs Third Wave’s
+cyber-security program and related practices.
+
+\
+
+Q11 When updates are done on the Lockbox platform, how is Third Wave Analytics
+assuring each update or release is being upheld to the same cyber security standard as
+the previous version?
+A11 In addition to Third Wave’s SDLC process, Third Wave submits to Salesforce’s
+AppExchange Security Review. Third Wave provides the code, metadata, and data which
+comprises the Lockbox LIMS Managed Package to Salesforce, and in return Salesforce “tests
+the security posture of your solution, including how well it protects customer data.” Finally, we
+have worked directly with one of the largest and most well known companies in the Partner
+Support space, Code Science, and had them further review our managed package for best
+practices around information security and scalability.
+
+\
+
+Q12 How have you configured your Salesforce environment to ensure security and
+compliance with regulations? What security testing and vulnerability assessment
+mechanisms have you implemented for your Salesforce environment?
+A12 Responses above in A3 cover many of the configuration choices made by Third Wave to
+secure its own Salesforce environment from a Technical Safeguards perspective. Currently, we
+do not conduct any vulnerability assessments, but do periodically review configuration settings
+for appropriateness to then-current regulations and Third Wave’s information security posture.

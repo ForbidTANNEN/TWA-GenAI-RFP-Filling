@@ -1,0 +1,43 @@
+How long have they been in business? Describe your organization biography at a high level:
+Third Wave Analytics, Inc. (Third Wave) has spent the past 8 years building custom Salesforce-platform based solutions for Laboratory Operations as well Lockbox LIMS, a full featured LIMS built on the Salesforce Platform. 
+Prior to Third Wave, the founders of the company spent their careers in the healthcare & life-science industry across commercial, research & development, information technology, finance, and laboratory operations. In common was their use and mastery of the Salesforce Platform to solve real world business problems. 
+Unfortunately, the benefits of cloud computing and as-a-service thinking did not appear to benefit the Laboratory. It was this realization that caused Third Wave to set about building Lockbox LIMS.
+\
+Does your LIMS operate as on-premise or SaaS? 
+Lockbox LIMS operates solely as a software-as-a-service (SaaS). 
+\
+Please provide a number of current customers using the LIMS and a list of notable customers and some that resemble the operating model of the BPF:
+Lockbox LIMS is currently in use at several well-known NGS core laboratories including University of Texas – Austin, University of California – Berkeley, University of Wisconsin – Madison, and Van Andel Institute of Research, to name a few.
+\
+The price of the Lockbox LIMS (laboratory information management system) subscription is based on two factors: modules required and the number of users. In order to provide you with a specific price, we would need to learn more about your specific workflow and discuss which aspects of your lab you would like to manage in the LIMS. The average LIMS price for most Lockbox subscriptions is ~$225/user/month. This assumes the organization requires 1-2 add-on modules. Since Lockbox is a web-based LIMS system, there is no cost for hardware or servers, and no added charges for “Maintenance” that traditional on-premise software vendors bill for.
+\
+Lockbox LIMS is designed to be modular, so you can choose just those features your lab needs right now and add on any additional modules as needed in the future. The first module purchased is $175/user/month. Each additional module is $25/user/month. Modules include the following:
+Sample Tracking
+Protocol Execution
+Material Management
+Instrument Management
+Personnel & Training Records
+Document Control
+\
+Describe your organization training methodologies for educating new and existing users
+Third Wave utilizes a ‘train the trainer’ approach which benefits from the involvement of BPF super users over the course of the implementation. Additional training services are available upon request.
+\
+Do you provide well-documented system upgrades that authorized users can independently install. (Can you provide a sample)
+Lockbox LIMS upgrades are NOT pushed automatically to Customer Orgs. Should an upgrade be required, such an upgrade is equivalent to the ‘managed package installation via URL routine’ which is well documented online. 
+\
+Can trained LIMS administrators configure the LIMS independently (Describe limitations)
+Yes. If a feature is hard coded inside of the managed package, and such a feature has not been designed with user configurability in mind (not typical), then there are limitations on how such a feature can be changed.   
+\
+Do you provide access to professional services and support (describe SLAs)
+Yes. Professional Services are available as needed as part of a Statement of Work, on a time and material basis. Support, on the other hand, is provided with the cost of subscription. Note that “Support” is generally defined as services provided to resolve issues which meet the following criteria; features which were built by Third Wave, present in Production, and which fail to function as they did previously.
+\
+Do you recommend third-party implementation services that specialize in these types of projects
+No, Third Wave resources are required.
+\
+Does your organization hold any security certification. Describe which certification and when was it achieved (e.g.: ISO 27001, SOC 2)?
+Third Wave Analytics, Inc. does not hold any externally recognized certifications at this time, outside of Privacy Shield. Here are some additional details which inform our information security posture:
+Cloud Only: Third Wave does not own nor operate any appreciable information technology assets (for example, servers, networks, etc) as it relies on cloud-only services such as Google Workspace, Salesforce CRM, Zoom, LucidCharts, and more to run its business.
+Training: Regular information security, HIPAA, and FCPA training among others.
+Technical Safeguards: TWA information security obligations for resources and management, including encryption at-rest of laptop hard disk drives.
+Policies: TWA resources are forbidden to take physical receipt of sensitive data such as protected health information (PHI).
+\

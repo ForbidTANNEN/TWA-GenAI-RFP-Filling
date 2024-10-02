@@ -1,0 +1,68 @@
+All software for the system must run under Windows 10 or other known software.? - Yes - Web-based and app-based interfaces.  See https://help.salesforce.com/s/articleView?id=sf.technical_requirements.htm&type=5\
+User hierarchy with different rights levels, local administrator / super user must be able to add and remove rights for new and existing users? - Yes - \
+LIMS can be integrated with existing IT systems at the customer? - Yes -  - Yes - , so long as other systems have APIs.\
+Print to PDF, Excel and Network Printer (A4)? - Yes -  - Yes - , things can be configured to print. Depending on what needs to print and the formatting required, some configuration or development may be required.\
+Be able to connect the system to ipad / tablet for easy use of the system in the laboratory.? - Yes - See https://help.salesforce.com/s/articleView?id=sf.technical_requirements_phone.htm&type=5\
+The system must be able to support a minimum of XX users who are logged in at the same time.? - Yes - \
+Special print for label / label printer (network / USB), must be able to be adapted to label printers? - Yes - We have desktop printing for Dymo and Zebra. We have cloud printing for Zebra only.\
+Labels (provided by LIMS) must contain digital readable ID ("barcode") and / or be readable by eye (plain writing). It is possible to get labels for case number, samples and sub-specimens.? - Yes - We have desktop printing for Dymo and Zebra. We have cloud printing for Zebra only.\
+Electronic signature for all operations (tracking of all actions - Audit trail)? - Yes - \
+Does the lab prefer cloud or server solution?? - Yes - \
+Response time for inquiries regarding critical issues (stability / access / backup) shall not exceed 24 hours (excluding weekends and public holidays). ? - Yes - \
+problems with printing reports need to be addressed the same day. The lab's working hours are:? - Yes - Standard Business Critical Issue response time is 4 Business Hours. Enhanced Support includes 1 Business Hour response time.\
+Solution A: automatic transfer of data for the invoice to ERP-system. ? - Yes - Interfaces can be configured to ERP systems with an API.\
+Solution B: the information can be exported for manual import into the invoice program.? - Yes - \
+exported data should include: Customer file (who receives invoice, who is veterinarian, producer, site), report file (case-number,  internal customer numbers, amount of tests, which tests,…)? - Yes - \
+Invoices and credit notes are being managed in the LIMS. ? - Yes - Lockbox LIMS can be used for invoicing. However, many of our customers interface the data needed for invoicing to their financial system and invoice from there.\
+Invoices are being generated for every report.? - Yes - \
+Invoices are being generated once a week for each party; the invoice includes relevant data of every report that is being billed? - Yes - \
+Box on customer level to tick, how he receives invoices (Email, electronic invoice, post)? - Yes - \
+invoices are being sent automatically to Email of customer, as electronic invoice or are being printed at laboratory's printer? - Yes - \
+data for invoice (price list,…) needs to be in LIMS? - Yes - \
+data of invoices (e.g. sales of debitor) need to be exported to ERP-system? - Yes - \
+Dashboard/Tab with filters that can summarize all case numbers that are at different stages (describe a solution that keeps track of the workload)? - Yes - Reports and dashboards can be configured that filter by stage, summarize by record count, and produce tables, graphs, pie charts, etc.\
+Dashboard/tab with filters as above for all tests? - Yes - \
+Dashboard/tab with filters as above for all samples? - Yes - \
+statistics of the lab works (how long take tests, how long takes it from sample arrival to report, how many samples of certain discipline / test have been examined, how many positives / negatives do I have of a test,…? - Yes - \
+statistics of the customer: what results of test X does his producer A have in the last months, how many samples did customer send, what kind of samples, what kind of tests / disciplines, how was his turnover,...? - Yes - \
+general statistics like which customer hasn't sent us samples in the last month; list of all customers with contact details that sent us samples the last year, list of all customers with their turnover,...? - Yes - \
+Data analysis for control charts, KPIs? - Yes - \
+Compatibility of LIMS to ISO 17025:2017? - Yes - \
+SOP / document management in LIMS possible? (version control with specific user rights to alter and release a new version of an SOP etc.)? - Yes - We are releasing this functionality in the next few months.\
+Link SOPs to tests  in the LIMS (e.g. click on button to view the SOP in pdf format). Both if SOP "lives inside" LIMS, or if in another system.? - Yes - \
+Is there a Training Records Management module (assignment of users to courses, attendance records, scheduling of refresher courses, course evaluation,…)? - Yes - We are releasing this functionality in the next few months.\
+
+"A general description of the offered system must be submitted. The description must give clear answers to the following points:
+
+* Describe if the solution is designed as a local server solution or as a cloud service.
+* Requirements for the end user's hardware, network, any licenses and support software. For systems with local server operation, server requirements must be stated.
+* In a cloud service, it must be described how data security is taken care of. This involves communication between the user and the cloud, as well as a description of the backup solution for data stored in the cloud.
+* For cloud service, data must be able to be stored for a minimum of 10 years.? - Answer:Lockbox LIMS is a cloud-based solution operating on Salesforce Hyperforce on AWS servers. All data storage is handled in this fashion.  All data is stored replicated across six servers, across multiple fault domains. For details, see https://engineering.salesforce.com/architectural-principles-for-high-availability-on-hyperforce/.
+Users access the software through their web browser or a phone or tablet app.  See https://help.salesforce.com/s/articleView?id=sf.technical_requirements.htm and https://help.salesforce.com/s/articleView?id=sf.technical_requirements_phone.htm
+Data is stored indefinitely.
+
+Salesforce's High Availability Architecture addresses backups for the purposes of intrusion and downtime. For backups for the purpose of rollback, we recommend using Own.  See https://www.owndata.com/products-backup-recovery-salesforce.\"
+Windows or  web interface for end-user? - Answer:Web or phone/tablet app.\
+At least 2 users must be trained to the super user level. Describe the training plan and expected time use.? - Answer:During the implementation, we work with the customer's project time to configure and code things to their needs. During this time, the customer's project team members become super users. We often find that minimal additional dedicated training is needed.  All professional services, including training, are billed by the hour based on time actually used.\
+It must be possible to implement the system effectively. Enter the expected implementation time (the time it takes to use the new system with full functionality) and describe the process.? - Answer:The time required depends greatly on the specifications for the initial roll out, and the time available from the customer team for providing specifications and testing.  Timelines generally are between a month and a year depending on the complexity. We work in weekly sprints, understanding the exact needs of the next user story, configuring them, and then showing the results on the next call.  This process continues until everything is configured as needed for go live.  Final testing is performed in a sandbox, and finally everything is migrated to production for go live.\
+Customized course for internal users (5-7 pieces). Describe the training plan and expected time use. Enter training location (on-site or remote)? - Answer:Training can be performed on site or remote to the specifications required.\
+"Response time for inquiries regarding critical issues (stability / access / backup) shall not exceed 24 hours (excluding weekends and public holidays). Enter response time for inquiries of different types.? - Answer:Standard Support: 8 business hours for general guidance and 4 business hours for business critical.
+Enhanced Support (additional fee): 2 business hours for general guidance, and 1 business hour for business critical.\"
+If I have a support question can I telephone a help-desk and immediately talk to a technical person familiar with my system?? - Answer:You have the phone numbers for your project team members.\
+"How is your support set up? In which time zones and languages (Germany, USA, Brazil, Japan)? At what time can they be called?? - Answer:European Standard Support Hours: Mon-Fri 8-15 GMT/BST.
+North American Standard Support Hours: Mon-Fri 5am-4pm PT
+European Enhanced Support Hours (Add'l Fee): Mon-Fri 7-24 GMT/BST
+North American Enhanced Support Hours (Add'l Fee): Mon-Fri 3am-6pm PT\"
+The vendor must have sufficient programming competence at his disposal to be able to cover the customer's need for program adaptations within 10 years after the purchase of the system. Describe available programming skills and prices for such work. If the programming skills is combined with laboratory skills, this will be an advantage.? - Answer:We have a broad array of team members and qualifications. All development is done using a combination of Salesforce tools including Apex, VisualForce, and Flow. Developers often have multiple decades of experience. Laboratory subject matter experts similarly have multiple decades of experience in that field. We have some resources with experience in both. Senior Developer rate is $265 per hour.\
+What is the vendor track record with respect to upgrade paths e.g. number of years/versions?? - Answer:We generally provide general availability releases at least every 10 months.\
+Indicate the expected life of the product and any updates, technical extensions and / or upgrades that are planned.? - Answer:There are no sunset plans and we continue to provide enhancements and updates on an ongoing basis.\
+Are new version upgrades supplied to customers at no cost? Is this true if the new version is a complete re-write of the previous version?? - Answer:We do not do complete rewrite versions. The functionality is provided at no cost. If professional services time is required for configuring new functionality available and desired in the update, there is a charge for these professional services.\
+How much effort is typically needed for the implementation of an upgrade and what do I have to pay?? - Answer:The primary effort is testing to ensure that all functionality works as expected. There's no cost for the update, only for making updates to customization as needed or requested.\
+Will an upgrade preserve my configuration or custom code as well as my data?? - Answer:Yes\
+Provide an example of at least one customer who has followed an upgrade pathway since the first version of the system.? - Answer:The University of Wisconsin is one of our oldest accounts having gradually upgraded through over 60 versions until today.  Upgrades have generally been smooth throughout this period.\
+If I have a need to modify a screen, a workflow or a menu on my system is there any way of e-mailing it to you so that you can modify/correct it and e-mail it back?? - Answer:Yes, you can send us a screenshot of the current state, instructions for where the screen is found, and a list of requested changes. We will need make the changes in a sandbox environment for testing and subsequent migration to production.\
+Do you guarantee that we will always be able to upgrade to the next version?? - Answer:Yes\
+Describe functionality and development opportunities for the system beyond the requirements specified above, which may be of benefit to our laboratories.? - Answer:Lockbox LIMS is extremely flexible, customizable, and scalable. As your needs change, it can continue to be modified to the new requirements.\
+Please descibe the opportunity to work on ELN (Electronic Lab Notebook) with workflows corresponding to the laboratorys SOPs, and integration to the LIMS system? - Answer:External ELNs can be connected to Lockbox LIMS via API or hyperlink.\
+does every action need to be safed, or is everything safed automatically?? - Answer:Each page has a Save button to press.\
+do you have to press "refresh" to get up-to-date data, or is that automatically / can nobody change something while I am in the report / test?? - Answer:Generally the screen needs to be refreshed to see updated data.\

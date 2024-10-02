@@ -1,0 +1,104 @@
+ Instrument interface with ABI 7900 and Quant Studios (and other molecular platforms) - Custom Developed API-based Web Services\
+Interface with custom-designed algorithm to process ABI 7900 and Quant Studio results that creates test results - Boomi Required\
+Electronically create and send test requests partner labs when requested on BTX TRF.  (BTX has a relationship with another lab where each company lists the other company's tests on their requisitions.  When requested, each company forwards the TRF and sample to the partner once initial testing is complete) - Custom Developed API-based Web Services\
+Electronically receive test requests from partner labs when requested on partner's TRF. - Custom Developed API-based Web Services\
+ Barcoding: Create CAP/CLIA compliant labels for specimens received and for derived containers/specimens - Label Printer and Label Stock TBD\
+Ability to scan documentation received with TRF and specimen, and have the scanned document attached to the patient/accession record - Files can be attached to discreet Lockbox records as well as be review in full via Salesforce 'Files'. May require 3rd party integration with common data container service (S3, BOX, etc)\
+Specimen Lineage tracking (parent to child to grandchild), derived sample creation from parent barcodes, pooling of derived samples into new derived sample, etc. - Standard Sample Management Functionlaity\
+Ability to organize group of derived samples into Run, and from there create plates for samples contained within the Run - Standard Sample Management Functionlaity\
+Manage plates and derived samples as they move from plate to plate through the PCR Process - Need to right-size the hand-offs (CSV versus API-enabled web-service)\
+Ability to flag patient cases as rush/urgent, and have those flagged cases appear at the top of worklists, and visually stand out from other orders - \
+Specimen tracking: a way to indicate storage locations in the freezer when material has been archived, or is “at rest” during the production process.  - \
+Samples are checked in and out of storage when in storage or "at rest", date/time/user captured with each check in/check out - Sample movement is audit tracked. Some customization required pending actual requirements. \
+Samples can be checked out to be sent to partner facility (like send-out, but partner sends patient reports to client, returns block) - Assumption is that storage model would include off-site locations and be refected in sample life-cycle and statuses\
+Comprehensive Audit trails to show date/time stamps of each change to a given record, visible to system administrators, supervisors, and auditors on-demand - Note that some field types are not able to show prior values at change. In such cases, field types to be re-designed.\
+Ability to track specimen's/case's workflow status with enough granularity that location within the facility can be determined. - \
+Ability to track location, quantity on hand, and usage of released reagents and other tracked material within the system. - Standard Lab Supply Functionality\
+Ability to track qualification/release process for reagents, and track usage of reagents during qualification - Pending qualification requirements, current functionality assumes classification of either sample or la supply\
+Ability to see inventory levels of reagents, and indicate which reagents are at or near re-order thresholds - Standard Inventory Re-Order Points\
+Patient reports can be created to match current BTX report formats - Fit, with customization\
+Management reports can be run on-demand, created by BTX personnel, and scheduled for email delivery - Standard Salesforce Platform functionality\
+Patient reports are previewed to the signing physician rendered as near as possible to the final, signed version - Discreet PDF of rendered clinical report will be routed for review and approval, be available as-delivered for viewing, and can be DocuSigned as needed\
+Canned comments for reporting fields available in type-ahead style drop-down lists, and are editable by BTX personnel - \
+Need to be able to enable/disable a pathologist's ability to sign out a given case based on the patient's State of residence and the pathologist's State certifications.  Primarily applies for New York patients. - Need more information on requirement. I presume this is made possible when covered in LIMS data model\
+Ability to flag cases for review by second pathologist, with the ability to record internal comments by each reviewing pathologist.   - Standard Salesforce Platform functionality, including multi-step approval routing\
+Ability for Pathologist to send case back to lab for additional analytical work, retest, or some other scenario, with comments - Although there is OOB support for re-test, experience tells us that this is one of the most difficult use cases as each clinical workflow would need to intelligently track and support jumping back in line. FIT would require considerable process mapping and Lockbox configuration and customization\
+If a specimen needs to be repeated as a result of a QC check failure, or some other judgement call by medical or technical staff, the technologist or pathologist can select which run's data is used in the final patient report - See ID 25, as this FIT designation assumes that the clinical reporting process meets re-test requirements\
+Ability to record internal comments for patient accessions by all members of the laboratory and medical staff.  Comments are date/time and user stamped. - \
+System supports creating new revisions of previously issued patient reports, keeping all previous versions, and following typical CAP/CLIA workflows for Amended and Corrected reports - See ID 25, as this FIT designation assumes that the clinical reporting process meets re-test requirements\
+System supports issuing Cancellation reports for accessions cancelled after order.  System can revise a previously issued report to a Cancellation report. - See ID 25, as this FIT designation assumes that the clinical reporting process meets re-test requirements\
+System supports QNS/TNP reports - See ID 25, as this FIT designation assumes that the clinical reporting process meets re-test requirements\
+What does the process look like if we wish to have options for more than one report type, e.g. if we wanted a separate design for New York clients, or a separate design for a clinical trial.  Include option for a completely different set of demographic fields - To be design input to clincal reporting workflow and PDF render via templates\
+Can we have data entered by the client in the portal auto populate in other areas of the LIS ( e.g.  Accessioning screen, report, patient files etc..) - \
+Start to finish review of the workflow, the number of screens the user(s) must interact with, and the frequency of needing to click around to navigate within the current task and to subsequent tasks. - Unclear of the desired application functionality to support such review\
+Search function: for finding data and creating the adhoc reports (filters, speed etc.) - \
+Review out of the box management reports available, understand how those can be customized - Very few reports are available OOB and are typically designed early in the process, consistent with data modeling, and then created in-system towards the later part of the project\
+Type-ahead filters for data-entry fields tied to lists (drop-downs, client lists, diagnosis codes, etc.) - Salesforce Platform support filtering, although true 'type-ahead' functionality may require Lightning interface\
+Ability to support QC Check process for confirming patient data entry at accessioning - \
+"Integrations that need to be handled:
+XIFIN billing interface
+NeoGenomics: Send orders and specimens when requested by OP
+NeoGenomics: Receive orders and specimens when requested by their OP
+AutoFax
+Portal - All of these require specific system customization and code to deliver\"
+Interface with XIFIN system to support sending data collected during Accessioning and Pre-Accessioning - See ID 38\
+Interface with XIFIN to send accession and patient data after patient report has been signed by Pathologist - See ID 38\
+When setting up clients, ability to classify physicians as Oncologists, Pathologists - To be design input to data model, specified in on-boarding process\
+For a given patient accession, ability to record ordering physician, treating physician, and other physicians who may need to have the report distributed to them - \
+Provide HIPAA-compliant portal for Physicians to order tests, view results, interact with Customer Service, request contact from Signing Physician, etc. - Salesforce Partner Community can be configured for HIPAA compliance as determined by BTX\
+Ability to designate multiple users for a given account, with the understanding that the portal data-entry is often performed by a physician's delegate.  Each person should have a unique username/password - To be design input to security architecture\
+Need to support existing pre-accessioning activities for ensuring patient eligibility and other critical factors before test processing begins.   - \
+Accessioning process needs to link to pre-accessioned patients - \
+If discrepancies exist between pre-accessioned record and order record, support reconciliation - Support' is a soft concept which may leave room for GAP.  Need more information, for example is reporting a sufficient mechinism for such recon?\
+Generate FAX to client from within the system to request more information, missing information, or other ad-hoc message during the accessioning/testing/reporting process - Assumes the use of A5 Fax (formerly known as RS Fax)\
+Patient Reports faxed automatically to designated physicians after report signed - Assumes the use of A5 Fax (formerly known as RS Fax)\
+Clients notified by email (HIPAA compliant) when patient reports are ready for download from portal - Designation as HIPAA compliant is BTX responsibility. Email notifications with templates are standard functionality, and can be controlled with security architecture\
+Ability to flag cases for additional actions outside of normal workflow, such as: review multiple slides to "choose best", review of block for other reasons.   - Need more information on 'Case' in this scenario, as BTX team has already pointed out the differrence in termonology and meaning with the word 'Case'\
+Do you have any clients who exchange data with international (ex-US) physicians, patients.  How handled? - We have clients located outside of the US which do so. Data exchange techniques in common with what has been desribed herein\
+System goes through documented version and change control process, with evidence available to BTX upon request - BTX will be in control of development operations and change management of Lockbox once Lockbox is live in the BTX production environment\
+Is vendor validation of system available? IQ/OQ/PQ, Dev env, test scripts, user cases, testing, documentation? - Included in SOW Analysis\
+What training modes do you support?  (such as on-site, public classes, etc.) - Onsite and Remote, No Public Classes\
+What training do you have for various user roles within the system?  (such as Administrator, supervisor, end-user, etc.) - Lockbox Community and Knowledgebase articles available for review as needed\
+Description of license types for Biotheranostics users.  Are there module-specific licenses or other complexities that we need to be aware of? - See DRAFT Subscription Propoal sent \
+Description of license types for external (Portal) users - Two models; 1) Per User Account and 2) Per Login Numbers\
+Description of license types available for external partner users (such as send-out sites, collaborators, etc.) - Two models; 1) Per User Account and 2) Per Login Numbers\
+Describe role-based access control and how the system supports the minimum necessary HIPAA rule. - Security is multi-tier and robust, potentially down to the field level. Assumes configuration would be to lock down all access, and open as required (least priviledge)\
+System is 21 CFR Part 11 compliant for electronic signatures and records keeping - Assumes use standard Docusign. If 21 CFR version is required, monthly fees increase to ~ $65  user / month (please let us know if this is required and we will get a current quote)\
+System maintains uneditable audit trails for all patient, sample, and another other data specified by Biotheranostics - Assumes the use of Salesforce Shield\
+Describe hosting model for system.  Public cloud, private cloud, on premise, etc. - Hosting' assumes an aplication model. Since Lockbox is a SaaS, the infrastrucuture is Multi-Tenant Cloud Service, with geographically specific instances (North America, for example)\
+If the software is hosted on-site, describe system requirements including Operating System, Database, Hardware, Network, etc. - Not Hosted\
+"How are backups performed?  (Frequency, retention, etc.) - Data and service availability is acomplished by transactional mirroring across two geographically seperated data centers. Periodic Site switching testing and results are available for review by Lockbox customers.
+
+Should tranditional back-up of data be required, there are Salesforce AppExchange applications which can write your data to a BTX SQL instance on the BTX Lan (for example). If this is thought to be required, please let us know.\"
+Describe process of restoring data from backup - See ID 65\
+Describe Disaster Recovery capabilities of system - See ID 65\
+"Describe authentication method(s), including pasword requirements, password complexity, password expiration, password reset procedure - Password Policies: https://help.salesforce.com/articleView?id=admin_password.htm&type=5
+
+Authentication Methods: 
+https://help.salesforce.com/articleView?id=security_overview_user.htm&type=5
+
+\"
+Is the system compatible with commercially available single sign on products?  Which ones?   - SAML 2.0 Compliant\
+Are there reports available to enable periodic auditing of users, roles, elevated permissions? - \
+Are there reports available to see login history of given user or set of users? - \
+Are there reports available to see the records accessed by a given individual within a given timeframe? - Reviews such as this should be made possible by Salesforc Shield (Event Monitoring, for example) although specific solutioning is unknown at this time\
+Describe remote access capabilities of system - As Lockbox is a Saas, all access is remote (See ID 68)\
+Describe how remote access can be limited - As Lockbox is a Saas, all access is remote (See ID 68, athentication method URL)\
+Is VPN support required?   -  VPN is not supported, nor required\
+"Are there mobile apps available for iOS, Android?  Which versions are supported? - Salesforce Mobile Support:
+https://help.salesforce.com/articleView?id=salesforce_app_requirements.htm&type=5\"
+"What are typical support requirements from internal IT support personnel?  Are there training and certifications available? - Zero Fee Salesforce Training is available here: https://trailhead.salesforce.com/en/home
+
+No Specific Lockbox certification programs exist at this time.\"
+"How are new versions (including patches) handled?  What documentation is provided?  Are test environments available?  How far in advance?  - Salesforece Platform upgrades are 3x a year, with no choice to delay (aka required). Notification is no less than 30 days, with the new version available as needed in non-production environments ('test' environments)
+
+Lockbox Versions, when released by the vendor, are optional. If an upgrade is required, testing can take place in non-production environments\"
+"What is the rollback procedure for new versions? - There are no roll back proceures for Salesforce Platform upgrades.
+
+Lockbox upgrades can be down-reved if needed.\"
+"How far in advance are clients notified of new versions? - Salesforce Platform upgrades are scheduled up to ~ 1 year in advance.
+
+Lockbox upgrade release notification are typically 30 days.\"
+"Can new versions be declined?  For how long?  What are the risks of declining? - Salesforce Platform upgrades cannot be declined. 
+
+Lockbox upgrades can be declined. Risks of decline may include loss of new functionality\"

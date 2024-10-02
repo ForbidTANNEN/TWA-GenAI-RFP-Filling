@@ -1,0 +1,11 @@
+Do you have a quality management system? - Yes\
+Is your quality management system certified?
+    ISO 9001 - No\
+Does your company have further certifications? - Yes - EU/US Privacy Shield, Salesforce\
+Do you agree to TRIGA-S carrying out an audit in your company? - Yes\
+Do you have maintenance plans? - Yes\
+Are production plant and process validations performed? - Not applicable - Comment: Third Wave is not a Manufacturer\
+Is the QM system described in a quality management manual (QM manual) or equivalent documentation? - Yes\
+Do you have an organization chart? - Yes\
+Do you have a system for regular internal audits? - No - Comment: Planned 2023\
+Is there a QM document change service that ensures that invalid versions are no longer used? - Yes\

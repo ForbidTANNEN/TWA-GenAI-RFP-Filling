@@ -1,0 +1,112 @@
+What is the company address? - 7 Joost Ave Suite 201, San Francisco, CA 94131\
+What is the company URL/web address? - https://thirdwaveanalytics.com/\
+"Who is the account rep/main contact and their contact information?  - Savitra Sharma - General Manager
+Loren D'Amico - Engagement Director EMEA"\
+How many years in business? - 9\
+Are you a public or Private Company - Private\
+What is the company solution/product road-map and strategy?  - We currently develop and sell Lockbox LIMS, a Salesforce based application that supports Sample Management, Protocol Execution, Instrument Management, Lab Supply/Inventory Management, Quality Events, and Training Management. Our roadmap for the upcoming year includes further development of our QMS modules to support quality management features.\
+Is the site hosted by the third party/separate company?   - Yes, Lockbox runs on the Salesforce Platform.\
+Are you a member of any data security organization or other industry-recognized privacy organization? - Yes, we have Privacy Shield membership\
+What is the name and description of the service/solution/application being provided? - Lockbox LIMS\
+Is there a development, test and quality, and production environment available?  - Yes\
+Are there any geographic limitations? - No\
+Are there any Capacity limits? - No\
+Are there any Desktop specifications or limitations? - No\
+What is the typical time frame for set up activities before go live? - 3-12 Months depending on the scope of the initial go-live.\
+What company confidential (IP, R&D, etc) or sensitive (legal, compliance, contractual, etc.)data is being transmitted or stored? - None\
+Is data included about individuals that can be identified from the data ("Personal Information")? Yes/No - No\
+Does this project include the collection of Personal Information? - No\
+Where is the data being collected and stored?    - This varies based on the location of the server upon which the Lockbox LIMS application is hosted, which can be specified upon project initiation. See https://help.salesforce.com/s/articleView?id=000382217&type=1 for potential options.\
+From which countries will you be providing services to Smith & Nephew ? - USA, UK, Italy, India.\
+In which countries will you process Smith & Nephew data? - This varies based on the location of the server upon which the Lockbox LIMS application is hosted, which can be specified upon project initiation. See https://help.salesforce.com/s/articleView?id=000382217&type=1 for potential options.\
+Where is the backup data being stored?  - This varies based on the location of the server upon which the Lockbox LIMS application is hosted, which can be specified upon project initiation. See https://help.salesforce.com/s/articleView?id=000382217&type=1 for potential options.\
+What approval and permits have you obtained for data transfer across borders (if necessary)? [example  Safe Harbor/Company Binding Corporate Rules/inter-company agreements ] ? - We have Privacy Shield and have signed GDPR based SCCs and BCRs for specific European customers. We are happy to execute these agreements with S&N as required.\
+Provide a capability/feature/function narrative/description documenting this solution/application. This document(s) should do a good job of describing the solution in a narrative form. - Please see our website for a full narrative of our capatilities/features/functions: www.thirdwaveanalytics.com\
+If the company  is acquired/sold/dissolved, what options are available to get the data? Costs?  - All data can be exported by CSV files at any time at no charge.\
+Will personal information be collected or processed ? - No\
+Please provide your company Privacy Policy? - https://thirdwaveanalytics.com/privacy/\
+Does your organization have a Privacy Breach response policy or procedure ? - Yes, we have a QMS which contains a breach response plan.\
+Are you sub-contracting any services to a Third Party ? - We use some third-party individual consultants to provide consultative services to clients.\
+If so, please list the services and Third parties you sub-contract to - Our project teams are a mix of employees and subcontractors, so third parties can be involved in all phases of a project. The third parties are typically indpendent contractors or small entities formed by individuals.\
+Do these Third Parties follow the same or similar data protection policies and procedures ? - Yes\
+Do you run vunerability /penetration tests if so please provide results - Since we are built on the Salesforce platform we utilize the pen tests carried out by Salesforce. Please find the results of those tests here: https://compliance.salesforce.com/en/documents\
+Is it a dedicated or a shared environment?  - Shared\
+If it is a shared environment, how is the data segregated from other shared environments?  - See https://help.salesforce.com/s/articleView?id=000385172&type=1\
+How is security managed in the shared environment?   - See https://help.salesforce.com/s/articleView?id=000385172&type=1\
+What controls are in place?  Physical, Infrastructure, etc. - See https://help.salesforce.com/s/articleView?id=000385172&type=1\
+Who has access to the infrastructure, hardware, software, data, and IP? Please provide detail on the roles & responsibilities of administrators, profiles, hiring practices etc  - https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/misc/salesforce-security-privacy-and-architecture.pdf\
+How is access controlled ? - https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/misc/salesforce-security-privacy-and-architecture.pdf\
+What application & data access audit logs are available?  - Data audit trails for all data fields of the application are available to track who made a change, when, the old value and new value. In addition, event monitoring for all user actions in the system can also be tracked.\
+How often can we get a copy of the logs if needed? - Yes\
+How is the data encrypted in transmission and at rest?    - https://help.salesforce.com/s/articleView?id=sf.security_pe_concepts.htm&type=5\
+What encryption schemes are used? - https://help.salesforce.com/s/articleView?id=sf.security_pe_concepts.htm&type=5\
+Who has access to the decryption keys? - https://help.salesforce.com/s/articleView?id=sf.security_pe_concepts.htm&type=5\
+How is the backup data stored? Who has access to this backup data?  - https://help.salesforce.com/s/articleView?id=sf.security_pe_concepts.htm&type=5\
+Are data on backups encrypted? - https://help.salesforce.com/s/articleView?id=sf.security_pe_concepts.htm&type=5\
+What type of investigative support is provided in cases of breach?  - Third Wave Analytics will provide access to our Chief Security Officer to provide whatever support is required in the event of a breach.\
+How is the data wiped out (destroyed/deleted) of the environment (from disks, servers, etc.)?  - https://help.salesforce.com/s/articleView?id=sf.security_pe_concepts.htm&type=5\
+What is your data retention policy? - https://help.salesforce.com/s/articleView?id=sf.security_pe_concepts.htm&type=5\
+What types of regulations are being followed and complied with? (PCI, HIPAA, SOX, DPA, FDA 21 CFR Part 820/11, Other) - We support HIPAA, 21 CFR Part 11/820, DPA.\
+How often is this audited?  - We perform management reviews of our QMS processes on an as-needed basis.\
+What formal certifications and associated audit reports can be provided and on an annual basis?  SSAE16, PCI, Safe Harbor, ISO27002, etc. - https://compliance.salesforce.com/en/documents and https://help.salesforce.com/s/articleView?id=sf.security_pe_concepts.htm&type=5\
+How are regulatory compliance controls and requirements enforced in work processes? - https://compliance.salesforce.com/en/documents\
+What type of user security, authentication and authorization options are available?  - https://help.salesforce.com/s/articleView?id=sf.security_pe_concepts.htm&type=5\
+Can the user directory be integrated with Active Directory or any other user store database?  - Yes\
+Is Single Sign-On (SSO) provided and if so what SSO options are available? SAML, HTTP-Fed, Open Auth etc?  - Yes. https://help.salesforce.com/s/articleView?id=sf.mobile_security_sso.htm&type=5\
+Are user credentials (ID/PW) encrypted in transmission and at rest? - https://help.salesforce.com/s/articleView?id=sf.security_pe_concepts.htm&type=5\
+"Can you confirm that password settings meet/exceed the following requirements?  If not, what are the settings?\
+Smith & Naphew password policy requirements:\
+ - Password Minimum Length: 8 characters\
+- Password Maximum Length: 64 characters\
+- Password Minimum Age: 0 day\
+- Password Expires: 90 days\
+- Lockout Threshold: 15 failed attempts\
+- Lockout Duration: Until Reset\
+- Lockout Observation Window: 30 minutes – Failed attempts counter reset after this period\
+- Password History Kept: 6 iterations\
+- Password Complexity Required: Yes\
+- Complex Passwords MUST contain characters from three of the following categories:
+    • Lower case alphabetic character (A – Z)
+    • Upper case alphabetic character (a - z)
+    • Numeric character (0 – 9)
+    • Special character (!@#$%^&*()_+=><?|~) - https://help.salesforce.com/s/articleView?id=sf.admin_password.htm&type=5"\
+What business continuity & disaster recovery services are provided?  - https://compliance.salesforce.com/en/disaster-recovery-bcp\
+What is the RTO/RPO (Time to recover and data loss) provided? - https://compliance.salesforce.com/en/disaster-recovery-bcp\
+Where are the DR (disaster recovery) data centers locations located?  - This varies based on the location of the server upon which the Lockbox LIMS application is hosted, which can be specified upon project initiation. See https://help.salesforce.com/s/articleView?id=000382217&type=1 for potential options.\
+What type of infrastructure exists to replicate and synchronize data between the primary and DR data centers?  - https://help.salesforce.com/s/articleView?id=sf.security_pe_concepts.htm&type=5\
+Do you offer transition services (if hosted environment of SaaS) ? - We would be happy to provide assistance if we have staff member availability as part of a professional services engagement\
+What architecture and technology standards, policies and procedures do you follow and comply?  - We follow GAMP5 for software development. We have an exhaustive QMS with policies and procedures based on the biopharma/biotech industry. We would be happy to share those documents with you if we are selected as a finalist.\
+What architecture frameworks do you follow? - Salesforce application development architecture best practices\
+How do you manage projects internally?  - We have internal developed project manaagement best practices and a suite of tools to manage requirements, issues etc.\
+What type of professional services do you offer to implement and support the SaaS application?   - We offer the entire suite of professional services that is required to implement our Lockbox LIMS SaaS application. We have been delivering professional services for 9 years and have become experts in it.\
+What type of PM resources do you have? - We offer project manager resources as part of our professional services.\
+What skills, experience, certifications etc do your employees retain?  - This varies by individual, however most of our team members have one or more Salesforce certiifcations. We also have employees with formal project management certifications such as PMBOK.\
+What type of data architecture is implemented? Please provide architecture diagrams - We would be happy to provide architecture diagrams of our solution if we are selected as a finalist.\
+Provide architecture diagrams for all layers? Business, Application, Integration, Data & infrastructure layer diagrams?  - Please see this article for the best overview of the Salesforce architecture, which Lockbox LIMS is built upon: https://www.salesforceben.com/salesforce-summary-an-insider-view-of-the-salesforce-architecture/\
+What type of infrastructure is used? Hardware, software, operating system, technology platform?  - Please see this article for the best overview of the Salesforce infrastructure architecture, which Lockbox LIMS is built upon: https://www.salesforceben.com/salesforce-summary-an-insider-view-of-the-salesforce-architecture/\
+What type of virtualization software is used? VM Ware, Hyper-V?  - Please see this article for the best overview of the Salesforce infrastructure architecture, which Lockbox LIMS is built upon: https://www.salesforceben.com/salesforce-summary-an-insider-view-of-the-salesforce-architecture/\
+What type of network bandwidth is available (min 100 Mbps) ? What options are available for dedicated bandwidth?  - https://help.salesforce.com/s/articleView?id=sf.console2_technical_requirements.htm&type=5\
+What type of scalability is provided for additional computing power – CPU, RAM, Storage? Costs? Time to implement?  - Additional storage is available, based on user count. We will be happy to provide this information as required.\
+What type of APIs, interfaces and web-services are available to pull and push data?  - See https://help.salesforce.com/s/articleView?id=sf.integrate_what_is_api.htm&type=5\
+How are they secured and encrypted?  - See https://help.salesforce.com/s/articleView?id=sf.integrate_what_is_api.htm&type=5\
+Is there an option to access the data directly from the database?  - There are multiple ways of extracting data from the database.\
+What type of reports can be generated or created?  - See https://help.salesforce.com/s/articleView?id=sf.analytics_overview.htm&type=5\
+What type of support is provided? Self-service, email, phone?  - Self-service via a customer portal, email, and phone.\
+What are the support times? 24×7, 5 days a week?  - An "Enhanced Support Plan" can be purchased which provides 2 hour SLAs for outages. 4 hour SLA for critical issues, and 6 hour SLA for non-critical issues.\
+What are the support response times? Critical, Urgent, High & Low issues/requests?  - An "Enhanced Support Plan" can be purchased which provides 2 hour SLAs for outages. 4 hour SLA for critical issues, and 6 hour SLA for non-critical issues.\
+Who provides the support desk and where are they located? How many employees is part of the support desk? Dedicated or shared with projects?  - All project team members provide customer support for the customers which they implemented.\
+Does your organization have an incident response policy or procedure in the case of data privacy breach? - Yes\
+If you sub-contract to third parties, do they have similar policies/procedures for privacy breaches ? - Yes\
+Is there a premium support model?  - Yes\
+What type of monitoring and alerting does the vendor provide?  - https://trailhead.salesforce.com/content/learn/modules/event_monitoring/event_monitoring_intro\
+What type of migration and integration support does the vendor provide?  - We have a full Integration and Migration team that can provide assistance as needed.\
+Is there a dedicated support manager and account rep?  - Yes\
+How do you support and manage integration with the customer’s existing SaaS apps?  - We can integrate using any of the following APIs: https://help.salesforce.com/s/articleView?id=sf.integrate_what_is_api.htm&type=5\
+How are upgrades, patches and other maintenance performed?  - See https://help.salesforce.com/s/articleView?id=sf.getstart_upgrades.htm&type=5. Additionally, Lockbox provides updates that can be installed as needed based on project requirements.\
+What type of change management & risk management procedures do you follow? How often is this communicated to the customers?  - We have internal SOPs which detail our change & risk management and would be happy to provide them if we are selected as a finalist.\
+Does the customer have any control on applying patches, upgrades and changes to the SaaS app? (this is very important to know especially if the SaaS app is integrated with other SaaS apps).  - See https://help.salesforce.com/s/articleView?id=sf.getstart_upgrades.htm&type=5. Additionally, Lockbox provides updates that can be installed as needed based on project requirements.\
+What SLAs are available – reliability, availability, performance, issues, requests etc? Penalties?  - Issue response SLA depend on the support plan purchased.\
+What types of credits are available if SLAs are not met?  - None\
+Is there a regular meeting (monthly/quarterly) to review the SLAs, issues, requests?  - During implementation the full project team generally meets weekly. After implementation, regular meetings can be scheduled at the frequency preferred by the client.\
+Who will be part of the SLAs meetings?  - The Engagement Director and any other project team members that are relevant to the conversation.\
+How are the issues escalated if the SLAs are not complied? Who can we escalate to in the management team?  - You can escalate to the General Manager and/or VP Commercial Services\

@@ -1,0 +1,255 @@
+/* Loading */
+
+#loadingScreen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#loadingScreen > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loadingScreen p {
+    color: white;
+    text-align: center;
+}
+
+.uploadTextField{
+    margin-bottom: 1rem;
+}
+
+#uploadButton{
+    margin-top: 1rem;
+}
+
+
+/* header */
+
+.header {
+    display: flex;
+    align-items: center;
+    position: fixed; 
+    justify-content: center;
+    width: 100%; 
+    z-index: 1000; 
+    background-color: white;
+    height: 4rem;
+}
+
+.headerText{ 
+    height: 100%;
+    text-align: center; 
+    left: 0; 
+    top: 50%;
+    margin: 0; 
+    color: white;
+}
+
+#excelFile{
+    color: black;
+    width: 14rem;
+}
+
+#exportButton{
+    position: absolute;
+    right: 2rem;
+    display: none;
+}
+
+/* main page */
+
+.main{
+    padding-top: 60px !important;
+}
+.scrollable-div {
+    background-color: #f8f9fa;
+    overflow-y: auto;
+    height: calc(100vh - 4rem);
+    position: relative;
+    padding: 0 0 0 0 !important; 
+}
+
+.QAheader {
+    text-align: center;
+    font-weight: bold;
+    background-color: #ddd;
+    position: fixed;
+    padding: 10px 0;
+    height: 3rem;
+
+}
+
+.answerInfoTitle{
+    font-weight: 500;
+}
+
+.answerHeader{
+    text-align: center;
+    font-weight: bold;
+    background-color: #438dcb;
+    position: fixed;
+    right: 0;
+    padding: 16px 0;
+    height: 3rem;
+
+}
+
+.answerInfo{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 2rem;
+    flex-direction: column; 
+}
+
+.promptInfo{
+    margin-top: 2rem;
+}
+
+#alteredQuerySubmit, #alteredResponseSubmit, .contextSubmit, .trashcanButton {
+    width: 33%;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+#uploadDBButton{
+    width: 33%;
+    align-self: flex-end;
+    margin-top: 10px; 
+    display: block;
+}
+
+.qa-pair{
+    height:100%;
+}
+
+.half-column {
+    width: 50%;
+    float: left;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+
+.half-column p {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 100%;
+    margin: 0; 
+    box-sizing: border-box; 
+    width: 100%;
+}
+
+.fixed-right {
+    background-color: #e9ecef;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    width: 33.3333%;
+}
+
+@media (min-width: 768px) {
+    .fixed-right {
+        width: calc(33.3333% - 0.5rem);
+    }
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0; 
+    max-width: 100%;
+}
+
+
+
+.highlighted {
+    background-color: #949494;  
+    color: white; 
+}
+
+.QA{
+    margin-top: 3rem;
+}
+
+#answerContext{
+    font-size: 0.7rem;
+    background-color: white;
+}
+
+.contextText{
+    width: 100%;
+    font-size: 0.8rem !important;
+}
+
+.contexts{
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.contextSubmit{
+    margin-bottom: 1.3rem;
+    font-size: 0.8rem !important;
+    width: 20%;
+}
+
+.trashcanButton {
+    margin-bottom: 1.3rem;
+    font-size: 0.8rem !important;
+    width: 20%;
+    margin-left: 1rem;
+}
+
+.trashcanImage {
+    width: 100%;
+    height: auto;
+}
+.buttons-container {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+
+/* LLM instructions popup */
+#llmInstructionsPopup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 11000;
+}
+
+.llmInstructionsPopup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#llmInstructionTextArea {
+    width: 100%;
+    height: 300px;
+    font-size: 0.8rem;
+}
+
+.llmInstructionsPopup-close {
+    float: right;
+    font-size: 1.2rem;
+    cursor: pointer;
+}

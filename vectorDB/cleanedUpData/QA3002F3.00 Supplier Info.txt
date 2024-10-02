@@ -1,0 +1,70 @@
+Describe your information security program and the roles within your information security organization (department) - 
+Salesforce operates, maintains, manages, and secures it’s information technology assets, including the data and metadata therein, in compliance with ISO-27001, ISO-27017, ISO-27018, AICPA SOC 1,2, and 3, PCI, DOD IL 2,4, NIST 800-171, HIPAA, Financial Services Compliance USA, Privacy Shield, Trust Certified Privacy Seal, CSA Star and more.
+\
+Describe how logical access is restricted to customer records, along with any relevant segregation of duties practices, password parameter requirements, periodic user access reviews, and requirements for multi-factor authentication - 
+Logical access to customer data is contained entirely on the Salesforce Platform, is controlled by unique credentials including a non-generic username and a password known only by the user. Various levels of access assurance are configurable, including smartphone authentication app 2FA, email 2FA, SMS 2FA, certificates, IP restrictions, time restrictions, and more.
+Within TWA, logical access to TWA data contained within key business systems is controlled in a similar manner, with unique credentials and use of 2FA except in the case where there is a technical limitation.
+\
+Segregation of Duties: 
+The Salesforce Platform provides for highly granular profiles and permissions which can match the roles of within the customers company both from a functional point of view, as well as a from a data visibility point of view (including controls around Creation of new records, ability to see the record, ability to update the record, and delete the record)
+Within TWA, duties are segregated across roles including Lead Engineers, Developers, and Management.
+\
+
+Password Requirement: Yes - Password controls are completely configurable in Lockbox LIMS.
+Default Settings: 
+Minimum length: The default is 8 characters.  
+Length of time until user passwords expire and must be changed: default is 90 days. This doesn't apply if password never expires setting is in place.
+\
+Password Requirement: Yes - Password controls are completely configurable in Lockbox LIMS.
+
+Available Complexity levels:
+No restriction—allows any password value and is the least secure option.
+Must mix alpha and numeric characters—requires at least one alphabetic character and one number, which is the default.
+Must mix alpha, numeric, and special characters—requires at least one alphabetic character, one number, and one of the following special characters: ! # $ % - _ = + < >.
+Must mix numbers and uppercase and lowercase letters—requires at least one number, one uppercase letter, and one lowercase letter.
+Must mix numbers, uppercase and lowercase letters, and special characters—requires at least one number, one uppercase letter, and one lowercase letter, and one of the following special characters: ! # $ % - _ = + < >.
+\
+Periodic Access Reviews -
+Third Wave executes periodic access reviews of its key business applications no less than annually. 
+Krystal is solely responsible for executing periodic access reviews of the users of Krystal’s Lockbox LIMS.
+\
+Describe the physical controls in place to restrict access to customer records that may be stored on servers, workstations/laptops, SaaS systems or in paper form, and the environmental protections to ensure the health of computing equipment (e.g., temperature and humidity controls) - 
+Third Wave’s office is secured with lock and key and security system. No material IT infrastructure exists anywhere for TWA, as we have a ‘Cloud First’ strategy. Employees are trained on our policies which obligate them to protect their laptops, as well as alert management should they ever be left alone for a long period of time or lost. 
+\
+Describe how encryption technologies are used to protect the confidentiality and integrity of sensitive data during transmission and storage.
+Salesforce At Rest: By default, data at rest on the Salesforce Platform is NOT encrypted. Data can be encrypted at rest by enabling licensing of Shield, a Salesforce suite of security and compliance tools.
+Salesforce Transmission: Only HTTPS connections may be used to establish access to the Salesforce platform.
+TWA Laptop HDD: TWA Laptops must have HDD encryption enabled.
+\
+Describe the controls in place to prevent or reduce the effects of malware such as viruses, worms, trojan-horses, and spyware on your workstations and servers and in your email systems.
+TWA’s local IT footprint is limited to Laptops, which come equipped with OS specific virus and malware protections either in the form of OS features and/or third party applications such as Malware Bytes, Symantec Anti-virus, etc
+\
+Describe the types of internal and third-party security audits and assessments that are performed, and the related reports you make available to customers.
+Salesforce provides it’s customers with documentation of most internal and external audits, analysis of site switching testing, penetration testing, attestations, and more at https://trust.salesforce.com
+TWA Management internally reviews its information security posture regularly but does not have any specific internal or external audit functions in place at this time.
+\
+Describe the controls in place to screen personnel for positions of trust or access to sensitive data - All TWA employees have been background screened.
+\
+Describe how employees and contractors are made aware of your security policies and their obligations to protect customer data.  Also describe any additional cybersecurity or data privacy training for specific roles such as customer support or software developers.
+TWA Policies and standards are communicated to TWA employees via email, remote meetings, and annual onsite training. Typically, we provide similar levels of training for all roles (HIPAA, for example)
+\
+Describe the controls in place to classify, label, and protect sensitive information on backup media, in hardcopy, and other forms of portable media while in transit and storage, as well as ensure the appropriate and timely destruction of sensitive data in accordance with 4 retention policies and/or customer agreements.
+-
+TWA prohibits the use of portable physical media other than Laptop HDDs, which are required to be encrypted. Since we have no on-prem nor hosted servers, no backup media is generated nor stored by TWA.
+\
+Describe the processes in place for capturing significant security-related events in your information technology environments, and for allowing management to measure performance over time, as well as supporting security incident detection and response: 
+TWA does review it’s Google Suite and Salesforce (for TWA CRM) access logs regularly and discusses any information security incidents with management.
+\
+Describe the processes and technologies in place to review event data with potential security significance, and to enable the detection of imminent, ongoing, or recent attacks on information assets, and appropriate response to isolate the effects of incidents, recover systems and assets, and harden assets against recurrence:
+
+TWA does not have any specific technical means of detecting attacks. All of our key business systems and data are contained in leading cloud services whose incident detection, response, and notification we rely on.
+\
+Describe how your products or services provide your customers with single sign-on options, the ability to use custom password policies (i.e. password complexity, password expiration, etc.) and the types of user roles in your products or services.
+Salesforce is SAML 2.0 compliant. Salesforce Roles are highly configurable to meet the customers requirements of segregation of duties, information security, and auditability of changes.
+\
+Describe the processes and policies in place for secure code reviews and security vulnerability testing of systems and applications (provided to Krystal) prior to deployment, and periodically in production to detect new and latent security defects and exposures.  Also describe timelines for remediation of critical, high, and medium risk exposures:
+
+“The Salesforce security team conducts rigorous reviews of all products before publicly listing them on AppExchange. Ensuring that all products go through security review means that customers can feel confident in knowing that any AppExchange offering provides the highest level of protection for their data.”
+Should a security vulnerability be identified by Salesforce or TWA, TWA would contact the customer immediately, and would seek to remediate as soon as possible, no more than 30 days from first contact.
+
+

@@ -1,0 +1,201 @@
+Provide a detailed description of this system or service. - System or service description - Lockbox LIMS is a laboratory information management system used to track all aspects of a laboratory's workflow including sample accessioning through results delivery. The service includes sample tracking, audit trails, storage management, studies, lab supply management, instrumentation records, and training records management.
+\
+What technology languages/platforms/stacks/components are utilized in the scope of the application? (AWS? MySQL? Ruby on Rails? Go? Javascript? Etc.) - List all technology languages/platforms/stacks/components used for this application/service. - Lockbox LIMS is built on the Salesforce.com (also called "Force.com") platform. The Salesforce platform uses Lightning and Apex (a proprietary Java-like programming language for Force.com) and Visualforce (a framework that includes an XML syntax typically used to generate HTML).
+\
+Does this Third Party application/system connect to any UPMC-hosted systems or applications (not including UPMC workstations)? - No, this system does not link to any UPMC systems except workstations. - 
+\
+Do you share customer data with, or enable direct access by, any other third-party? - No - We utilize the Salesforce.com platform for 100% of this application. Access to data may be granted by UPMC for troubleshooting purposes only under UPMC's request.
+\
+Does customer data leave your production systems in any circumstances? If so, please describe. - No - 
+\
+Do you have a dedicated information security team? If so, what is the composition and reporting structure? - No - Since we rely on the Salesforce.com application to host our system, they provide the information security for the application. We have in-house resources who manage our corporate security.
+\
+Does the Third Party have onsite staffing responsible for the confidentiality, integrity, and availability of information and resources? - Yes - Information Security Roles & Responsibilites SOP
+\
+Are security roles and responsibilities defined and documented in each constituent's job description at the Third Party? - Yes - Information Security Roles & Responsibilites SOP
+\
+Are verification/background investigations, reference checks, drug screening, and/or credit checks conducted on applicants for permanent employment and for services, such as, but not limited to, consultants, contractors, vendors, and temporary staff? - Yes - Information Security Roles & Responsibilites SOP
+\
+Is there a process for Human Resources to notify information system security/user administration when a staff member is terminated or any other change of status occurs at the Third Party? - Yes - Information Security Roles & Responsibilites SOP
+\
+Is there an enforced disciplinary process for employee non-compliance with the information security policy at the Third Party? - Yes - Information Security Roles & Responsibilites SOP
+\
+Are all employees and contractors of the Third Party required to attend security awareness training? - Yes - Information Security Roles & Responsibilites SOP
+\
+Does the Third Party have an Information Security Policy? - Yes - Information Security Policy
+\
+Does the Third Party's Information Security Policy have a privacy policy? - Yes - Privacy Policy is a separate document.
+\
+Does the Third Party's Information Security Policy include an information classification policy? - No - This policy is currently in process of being written
+\
+Does a data classification structure and segmentation exist for more sensitive/ critical data that rely on stronger controls? - No - This will be included in the to-be-written policy as described above.
+\
+Does the Third Party's Information Security Policy include personnel security, termination, and sanction policies? - Yes - Information Security Roles & Responsibilites SOP
+\
+Are the de-provisioning of accounts completed within at least 4 hours of notification? - Yes - Information Security Roles & Responsibilites SOP
+\
+Does the Third Party's Information Security Policy include encryption standards? - Yes - Information Security Policy
+\
+Does the Third Party's Information Security Policy include a policy for minimum security configuration standards (networks, operating systems, applications and desktops)? - Yes - Information Security Policy
+\
+Is the Third Party's Information Security Policy acknowledged by the Third Party's management? - Yes - 
+\
+Is the implementation of the Information Security Policy (and supporting materials) at the Third Party reviewed independently by internal auditors, an independent manager, or a third party organization? - Yes - 
+\
+Does the Third Party require all employees, non-employees, and business partner users to sign policy acknowledgement, acceptable use, and/or confidentiality agreements prior to being granted access to information processing systems? - Yes - 
+\
+Is there a policy in place for anti-virus detection and repair software at the Third Party? - Yes - 
+\
+Is UPMC's confidential data encrypted on all networks within the Third Party that TRANSMIT and RECEIVE such data? - Yes - All data in transit is encrypted using Transport Layer Security (TLS)
+\
+Is UPMC's confidential data encrypted on all systems within the Third Party that STORE such data? - Yes - All data at rest is encrypted using Salesforce Shield encryption.
+\
+Is encrypted communication required if connectivity is accomplished remotely to the Third Party? - No - Logging into the Lockbox LIMS SaaS application is done out of the box via TLS.
+\
+Do the encryption keys have identifiable owners (i.e. binding keys to identities)? - Yes - 
+\
+Do you allow for UPMC to provide their own keys for data at rest and/or data in transport encryption? - Yes - Please see this guide for more information around BYOK (Bring Your Own Keys) options: https://www.salesforce.com/content/dam/web/en_us/www/documents/reports/wp-platform-encryption-architecture-2018.pdf
+\
+Based on the data type (i.e. Credit Card Information, PHI, etc.) do policies and procedures exist for use of encryption protocols for data at rest and in transit? - No - Each customer of the Lockbox LIMS product determines what encryption they need around each type of field. 
+\
+Is backup media encrypted at the Third Party? - N/A – No UPMC data will be backed up. - UPMC will be creating their own backups.
+\
+Do you support secure deletion (e.g. degaussing/cryptographic wiping) of archived or backed-up data? - No - We do not store any backup data onsite.
+\
+Are the latest versions of antivirus software and virus definitions installed on Third Party systems? - Yes - Windows Defender, McAfee LiveSafe
+\
+Are operating procedures and standards documented at the Third Party? - Yes - Third Wave has a formal Quality Management System (QMS) in place which documents all procedures and standards.
+\
+Does a formal account registration and de-registration procedure exist for granting access to the UPMC system for all multi-user information systems and services at the Third Party? Please provide supporting documentation/details into this process. - No - It is up to the UPMC end-user to determine their end user access granting procedure.
+\
+Are roles created to limit access to the minimum necessary level in order to reduce opportunities for unauthorized or accidental modification or misuse of information or services at the Third Party? - Yes - QA-POL-2901 Minimum Necessary Policy
+\
+Are allocation and use of system administrative privileges restricted and controlled at the Third Party? - Yes - 
+\
+Do appropriate additional privileged access management exist for all diagnostic/ configuration interfaces (i.e. web portal, API, etc.)? - Yes - 
+\
+As it relates internally to the application, does either the UPMC owner or the vendor have appropriate least privileged access? - Yes - 
+\
+Do policies and procedures exist (including auditing) for authorizing access to the application or infrastructure? - Yes - 
+\
+Do policies and procedures exist on how you are restricting user account credentials (i.e.Single Sign-On and Federation, credential lifecycle management, multi-factor authentication, other authentication mechanism)? - Yes - Information Security Policy
+\
+Is access reviewed on at least an annual basis? - Yes - 
+\
+Does the Third Party have physical and logical access control rules to address security from an exception-based approach, in which access denial is the rule, and access must be specifically approved? - Yes - Minimum Necessary Policy
+\
+Is there a formal risk management program that includes annual risk assessments at the Third Party? - Yes - Software Change Contorl SOP
+\
+Are all relevant statutory, regulatory and contractual requirements explicitly defined and documented for each information system at the Third Party? - Yes - 
+\
+Are formal procedures and management responsibilities defined to ensure satisfactory control of all changes to equipment, software, or procedures at the Third Party? - Yes - Software Change Control SOP
+\
+Are production and non-production environments separate to prevent unauthorized access or changes to information assets (i.e.stateful inspection firewalls, domain/realm authentication sources, and clear segregation of duties)? - Yes - 
+\
+Is a patch management process for all IT systems documented and followed at the Third Party? - No - Third Wave does not have any IT systems are installed on-site. All IT systems are cloud based and therefore patch fixes are managed directly by the vendors.
+\
+Are the operating system(s) hardened to provide only necessary ports, protocols, and services to meet business needs and support technical controls (i.e. antivirus, file integrity monitoring, and logging)? - No - No hardware is managed on-site. All hardware relevent to the Lockbox LIMS application is managed by Salesforce.com
+\
+Do changes to the firewall rule set, for granting or denying access to the Third Party's systems, follow change management processes? - No - No IT systems are installed on-site. All IT systems are cloud based and therefore patch fixes are managed directly by the vendors.
+\
+Has local security (hardening) been applied to IT systems at the Third Party? - No - No IT systems are installed on-site. All IT systems are cloud based and therefore patch fixes are managed directly by the vendors.
+\
+Does the Third Party have Business Continuity Planning (BCP)? - Yes - Business Continuity: Backup, Restore, and Disaster Recovery Policy
+\
+Are adequate back-up systems available so that all essential business information and software can be recovered following a disaster or media failure at the Third Party? - Yes - 
+\
+When migrating or replicating for Disaster Recovery purposes, physical servers, applications, or data to virtualized servers are secured and encrypted communication channels used and, where possible, the network is segregated from production-level networks for such migrations? - No - No hardware is managed on-site. All hardware relevent to the Lockbox LIMS application is managed by Salesforce.com
+\
+Are procedures enforced which will establish retention periods for essential business information at the Third Party? - Yes - Customer dictates the retention period for field audit trail data. Other data is retained for the lifetime of the software subscription.
+\
+Does the Third Party have a formal communication plan for notifying UPMC that a major event has occurred and could potentially impact service delivery? - Yes - Business Continuity: Backup, Restore, and Disaster Recovery Policy
+\
+Is there insurance coverage for business or services interruptions or loss of assets at the Third Party? - Yes - General Commercial Liability insurance is in place.
+\
+Is a physical security program in place for protecting all business premises and information processing systems from damage, interference, and unauthorized access at the Third Party? - Yes - 
+ -  - Describe the type of supervision used.
+What controls have been established at the Third Party to ensure visitors must be authorized before accessing secure areas? - Active supervision (assigned escorts, monitored cameras) in all secure areas - All hardware used to run our service is managed by Salesforce.com. Their data centers are fully secure.
+\
+Does the Third Party employ the use of authentication controls, such as swipe cards or PINs to validate all access to secure areas? - Yes - Office uses a PIN controlled security system
+\
+Does appropriate segmentation exist such that the provider and customer user access is segmented from other tenant users? - Yes - 
+\
+Are standards enforced for a clear desk policy for papers and removable storage media for information processing systems at the Third Party? - Yes - 
+\
+Will UPMC data be segregated from other customer data at the Third Party? - Yes - Our SaaS cloud application is a fully secure multi-tenant architecture that allows for enterprise grade data protection while also housing data from multiple end-users on the same server.
+\
+Is there a current inventory of IT assets at the Third Party that relate to services provided to UPMC? - No - We rely on Salesforce.com to provide all IT assets that relate to service delivery
+\
+Does the system or application provided to UPMC by the Third Party include a web component (either a website or web service)? - Yes - lockbox.cloudforce.com
+\
+Are all user account IDs unique at the Third Party? (i.e., no shared accounts, including shared application or system administrator accounts.) - Unique user account IDs only - 
+\
+Does a network architecture diagram exist that clearly identifies high-risk environments (including your geographical and political locations) and data flows that may have legal compliance impacts? Technical measures shall be implemented and shall apply defense-in-depth techniques. - No - Documentation exists which delineiates the makeup of the salesforce architecture.
+\
+Do policies and procedures exist to support business processes and technical measures implemented, to protect wireless network environments (i.e. perimeter firewalls, encryption, access controls, unauthorized devices)? - No - 
+\
+Do all external connections at the Third Party, including connections to other clients, external Security Providers, business partners, and  to the Internet, go through stateful firewalls? - Yes - All connections to a Lockbox instance require HTTPS (TLS 1.1 or higher)
+\
+Are network configurations reviewed at least annually and supported by documented justification for certain services and protocols? - No - All network configurations are managed by Salesforce.com
+\
+Does the Third Party perform periodic network vulnerability and penetration testing for all network control zones? If "Yes"; Please summarize or attach your application vulnerability management processes and procedures? - No - All network configurations are managed by Salesforce.com
+\
+Does the third party have external security assessments performed on systems and software in use and/or developed at the Third Party? - Yes - 
+\
+Is the vendor's vulnerability assessment tools/ protocols scoped and capable of assessing the entire virtualized infrastructure to the hypervisor level itself? - Yes - The assessment covers all elements of the OWASP Top 10 2017. Note: we would need more information from UPMC in order to discuss the specific requirement described here regarding " the entire virtualized infrastructure to the hypervisor level itself"
+\
+Do you have a bug bounty program? - No - 
+\
+When was the last time the Third Party obtained an independent service organization audit (PCI, HIPAA, SAS 70, HITRUST) review? - Less than 12 Months - We can provide the complete list of all technical audits upon contract execution.
+\
+Are there controls to prevent the misuse of audit tools at the Third Party? - No - IT Audits are performed by the provider of our hosted solution, Salesforce.com 
+\
+Is application, web, or database development performed at the Third Party? - Yes - The Lockbox LIMS application which is built on top of the Salesforce platform is developed by Third Wave Analytics
+\
+Is a System Development Life Cycle (SDLC) process in place for infrastructure, business applications, and user developed applications at the Third Party? - Yes - SD-SOP-3100 “Software Development Lifecycle for Internal Projects”
+\
+Does the System Development Life Cycle (SDLC) include security testing at the Third Party? - Yes - SD-SOP-3100 “Software Development Lifecycle for Internal Projects”
+\
+Does the Third Party use automated tools for security testing of developed code and/or reviewing developed code? - Yes - An automated tool is used which runs a security scan.
+\
+Are developers required to be certified in secure software development at the Third Party (i.e., GIAC Secure Software Programmer certified)? If "No" How do you train developers in Secure Coding Practices? - No - The majority of our developers have obtained certifications directly from Salesforce which include best practices around application security in development.
+\
+Do logged system and/or security events on Third Party systems include the identity or name of the affected data, system component, or resource? - Yes - Event monitoring can be configured in Lockbox LIMS for customers which report on security events.
+\
+Are audit logs stored that can uniquely identify a users access that can detect suspicious network behavior or unauthorized changes? - Yes - 
+\
+Does the Third Party utilize automated tools to review security log information generated by information and security systems in place at the Third Party? - No - 
+\
+Are audit logs specific to UPMC generated when UPMC data is accessed at the Third Party? - Yes - Any login by the third party to the UPMC database will be tracked.
+\
+Can the Third Party audit logs involving UPMC data be reviewed by UPMC? - Yes - 
+\
+Are there real time alerts for security devices and/or firewall incidents at the Third Party? - Yes - Event monitoring can be configured in Lockbox LIMS for customers which report on security events.
+\
+Are automated alerting mechanisms in place to immediately notify appropriate individuals when security events occur at the Third Party? - Yes - Event monitoring can be configured in Lockbox LIMS for customers which report on security events.
+\
+Has the Third Party implemented network or host Intrusion Detection Systems (IDS) and/or Intrusion Prevention Systems (IPS) on all critical networks hosting services to UPMC and/or UPMC data? - Yes - Salesforce, or an authorized third party, will monitor the Covered Services for unauthorized intrusions using network-based intrusion detection mechanisms.
+\
+Have documented incident management responsibilities and procedures been established to ensure a quick, effective and orderly response to security incidents at the Third Party? - Yes - 
+\
+Have employees and contractors of the Third Party been made aware of the procedures for reporting security incidents and malfunctions? - Yes - 
+\
+Are the use of utility tools that can bypass security controls logged, audited, or restricted? - No - 
+\
+What is the name of the cloud service provider utilized for this application/system? - Other - Salesforce.com
+\
+What is the physical, geographical, and/ or logical location for the services that are offered by the cloud hosting vendor (i.e. Rackspace @ Virginia, Amazon Web Services Region East 1B 1C, etc.)? - Physical, Geographical, and/or Logical Location? - The physical location of the instance will be determined upon the completion of the subscription order/contract.
+\
+Do you retain audit log information at a minimum of 1 year? - No - Audit log information is maintained for 6 months, so the customer will need to download this every 6 months.
+\
+Are there auditing mechanisms in place that are accessible from a reporting standpoint and that UPMC can ingest into our own tools (i.e. Splunk)? - No - More detailed requirements are needed.
+\
+Is time synchronization used on all relevant information processing systems? - No - More clarification on this question is needed before it can be answered.
+\
+Will the Third Party report security incidents and security breaches to UPMC including the potential extent of a breach when UPMC data is involved? Please include your SLAs for notification in comment. - Yes - Yes, security incidents and breaches can be reported within 48 hours of Third Wave Anaytics being notified of such breach.
+\
+Does the Third Party have Chain of Custody procedures to ensure proper evidence collection during a security incident event? - No - This has not yet been implemented
+\
+Are capacity and resource requirements planned and prepared appropriately to deliver required system performance and to meet all agreed upon SLAs? - Yes - 
+\
+I accept responsibility for the integrity of the information submitted in this Security Plan. - Yes - 

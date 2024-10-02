@@ -1,0 +1,142 @@
+1. Data Protection and Privacy
+Encryption: 
+Is data encrypted in transit (using protocols like TLS) and at rest (AES or stronger)? 
+Yes 
+Who is responsible for encryption? 
+At-Rest: Salesforce, who TWA has contracted to be the Custodian of the customer’s data.
+In-Transit: Connections require HTTPS.
+What form of encryption is used?
+At-Rest: Envelope encryption with 256-bit key length, with the AES-256 encryption algorithm at rest.
+\
+Data Location: 
+Where is the data stored? 
+The physical locations of data will be known as soon as the customer’s instance of Lockbox LIMS is provisioned. Prior to provisioning, we know that the data will be in the US and that Salesforce uses Amazon Web Services to provide their instances with resources (for example compute, disk, etc)
+Is this on a private cloud, public cloud or vendor hosted?  
+Public Cloud
+What format is the data stored in (Database, Files, etc)?
+Customer Data entered into fields within the Covered Services is considered “transactional data”. Transactional data is stored within the Salesforce multi-tenant database. 
+Salesforce stores Documents and Files using cloud-native file storage technology because it’s inefficient to store unstructured Documents and Files in a relational database. 
+Both forms of storage benefit from the infrastructure encryption described above using Salesforce-managed keys stored in a Hardware Security Module.
+\
+Data Backup: 
+How frequently is data backed up? 
+As installed, the system, by itself, does not create copies of data which are stored off-platform for use by the customer.
+A System Administrator can manually initiate a point in time snapshop of all data (transactional and files, via Setup > Data > Data Export) on platform to be downloaded as n number of compressed files. In addition, such events can be scheduled to occur monthly, for example, although this scheduled event does not include downloading the files. 
+How long are backups retained? 
+In the above example, the compressed files are available for download 48 hours following the completion of the job (which made the files).
+What is the process to restore, test and verify the backups? 
+The process varies significantly depending on the method of backup. 
+Who is responsible for the data backups and restores and how is that coordinated with the vendor?
+TWA is not contracted to initiate such exports, nor download them, so an the customer resource with the appropriate access would have to do so. 
+\
+Data Recovery Plan: 
+What is your data recovery plan?
+TWA has contracted Salesforce to ensure that the customer’s data and their instance of Lockbox LIMS has its confidentiality maintained, is available to its users, all the while maintaining the integrity of the data itself. 
+The following Data Recovery Plan details apply to the data state at the point of disaster. The Services on Hyperforce Disaster Recovery plans currently have the following target recovery objectives: (a) restoration of the Service (Recovery Time Objective - RTO) within 12 hours after Salesforce's declaration of a disaster; and (b) maximum Customer Data loss (Recovery Point Objective - RPO) of 4 hours. However, these targets exclude a disaster or multiple disasters causing the compromise of multiple availability zones in the same region at the same time, and exclude development and test bed environments, such as the Sandbox service.
+Does it outline how you restore your data, and how you minimize the downtime and impact?
+No, it does not, as Salesforce is responsible for executing this plan. 
+Note that Salesforce frequently tests its ability to deliver on these recovery goals and writeups of these exercises are made available to the customer in a self-service mode via https://compliance.salesforce.com/en/services/salesforce-services
+Expanding on above, Salesforce Chaos Engineering plans and completes exercise objectives, to include Recovery Time Objective (RTO) and Recovery Point Objective (RPO) targets confirming the ability to redirect data traffic from failed Availability Zones (AZs) to the active AZ, along with performing data restores. 
+\
+Data Access: 
+Who has access to the data? 
+the customer and 2x TWA Team Members will have access to data. The specific names of those folks will be determined upon implementation, subject to updates over time.
+What are their roles and permissions?  
+TWA’s Team Members are Professional Service providers with the highest level of access, System Administrator.
+the customer will also have n number of System Administrators, to be determined at implementation and subject to change over time.
+\
+Data performance and quality: 
+How is data performance and quality regularly and proactively monitored? (Data performance refers to how fast and efficiently your data is processed, stored, and retrieved by your cloud provider. Data quality refers to how accurate, complete, consistent, and relevant your data is for your goals and operations). 
+Salesforce Operations are responsible for monitoring and maintaining data performance and quality. TWA does not have detailed specifics on how and when this is done. Should this be required, please let us know, acknowledging that it is likely that at some level these may be unavailable or summary in nature.
+What data monitoring tools and dashboards are provided to measure and visualize the data performance and quality indicators, such as latency, throughput, availability, error rate, completeness, accuracy, and timeliness? 
+As above.
+Do these tools and dashboards have alerts and notifications to identify and resolve any data issues or anomalies? 
+As above.
+\
+Data Retention: 
+How long is data stored, including databases and files? 
+Data is stored indefinably, for as long as there is open / active contract in place.
+Is the data archived, if so how and how often?
+Salesforce does not archive data longer than is required to maintain AZ failover readiness.
+\
+Data Retrieval:  
+How is data retrieved from the SaaS vendor? 
+the customer may access and retrieve data by logging into their instance.
+What format is the data retrieved in?  
+It depends on the method of retrieval, but in most cases ASCII text in files.
+Is the metadata retrievable?
+Yes, by the customer System Administrators.
+TWA uses and recommends GearSet for DevOps and GitHib for repo. Note that the subscription nor professional services contracted include these services.
+\
+How does the SaaS solution handle data integrations?
+Data Integrations can be performed in numerous ways including Lockbox LIMS specific data import/export, use of the native Salesforce RESTful API, Salesforce AppExchange for-fee plugins made available by third-parties, and the use of enterprise level ETL tools such as Mulesoft, BOOMI, SnapLogic, etc. 
+No integrations are specifically included in the contracted subscription nor assumed use of Professional Services.
+\
+Are third-party tools available to perform the data integrations? Yes
+What options are available to move historical data into the SaaS?
+There are many options. In addition to those mentioned above, there is also a Salesforce native client-based import export tool called Salesforce Data Loader.
+
+Are data dictionaries/requirements provided for integration?
+Not exactly. Such TWA be contracted to support/delivery on an integration, it is likely that we will provide such things as a part of our work.
+In addition, note that the customer may use OpenAPI to load such things into Salesforce, if available from the non-Salesforce system.
+Are partners available to integrate data?
+Yes, TWA is available to provide Professional Services in support of requirements, design, and implementation.
+\
+3. Third-Party Integrations
+Are API keys and other credentials securely stored and how are they secured?
+Keys are stored on platform and are only accessible by active accounts which have that level of access, for example System Administrators.
+Who is responsible for the relationship to support the third-party services and connectors?
+the customer
+\ 
+Does the SaaS offer role-based access control (RBAC)?
+Yes
+\
+Are multi-factor authentication (MFA) and single sign-on (SSO) supported?
+Yes
+\
+Is there a procedure for timely off-boarding of users? 
+TWA has not been contracted to provide such services. 
+\
+Is there an audit trail of user access and changes?
+Yes
+\
+Incident Response and Management 
+What is the provider's incident response plan?
+TWA relies on Salesforce Operations to respond to incidents.
+How are customers notified in case of a security incident?
+Business Associate Agreements (BAA) in place obligate Salesforce to report to TWA, and in turn for TWA to report to the customer.
+\
+Infrastructure Security
+What security measures are in place to protect the underlying infrastructure?
+Salesforce and their contractor AWS make available, to their Customers, documents which attest to the controls in place, in addition to internal and external audit reports for the numerous information security frameworks and regulatory obligations that they comply with.
+\
+Infrastructure Security
+Is the infrastructure hosted in a reputable cloud provider or in-house?
+Amazon Web Services provide the resources (Disk, Compute, etc) while Salesforce Operations is responsible for everything inside the Trust Boundary. 
+How is the network segmented and isolated?
+Salesforce Hyperforce provides for three (3) Availability Zones.
+\
+Monitoring and Logging
+Are activity logs available and accessible?
+System Administrators have access to run reports on system logs with detail on User Login activity, System Administrator Configuration changes, and Field Data changes. 
+\
+Monitoring and Logging
+How long are logs retained?
+Six (6) Month rolling logs
+\
+Monitoring and Logging
+Can logs be integrated with the company's own SIEM (Security Information and Event Management) solution?
+Yes
+\
+Monitoring and Logging
+What tools do you provide for restricting who can access, view, modify, or delete our data, based on their roles and permissions. 
+Lockbox uses the native Salesforce Security model
+\
+Monitoring and Logging
+Do you use authentication, and auditing mechanisms to enforce access control policies and track data activities.
+Access Control enforcement would likely be an the customer responsibility.
+\
+Application Updates
+How are software updates and patches handled?  What is the level of control customer would have on the timing of the updates and patches?
+Salesforce Platform Upgrades: These happen 3x per year, are mandatory, and are scheduled in advance. These upgrades are similar to an Operating System patch, in that although there is always a chance of it causing an issue, the vast majority of upgrades over the past 10 years have not caused issues. Should the customer want to execute a suite of tests on the 'upcoming' Platform release, Salesforce provides a non-production environment (aka, a sandbox) where testing can be done prior.
+Lockbox LIMS Upgrades: These are optional, and are detailed here: https://thirdwaveanalytics.com/lockbox-lims-release-notes/ We recommend reviewing releases for high value updates relevant to the customer, as an upgrade of the application should trigger a more comprehensive set of tests in a non-production environment involving more the customer folks and time. We would collaborate with you on the timing of the production deployment, to minimize impact.

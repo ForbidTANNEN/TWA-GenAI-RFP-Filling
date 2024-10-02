@@ -1,0 +1,7 @@
+Markdown
+pinecone
+openai
+cohere
+langchain_openai
+async-timeout==4.0.3
+pydantic-core
