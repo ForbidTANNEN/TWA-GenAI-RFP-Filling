@@ -7,7 +7,10 @@ https://d318fvq3xvqnjg.cloudfront.net/
 *Username*: twa  
 *Password*: chatbot
 
+## Demo
 
+![image info](readmeImages/uploadPage.png)
+![image info](readmeImages/mainPage.png)
 
 
 ## Project Overview
@@ -21,6 +24,7 @@ This project relies on three main technologies:
 - [OpenAI API](https://platform.openai.com/docs/overview) for llm calls. 
 
 ![image info](architecture-diagram.png)
+
 
 ---
 
