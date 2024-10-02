@@ -11,7 +11,7 @@ https://d318fvq3xvqnjg.cloudfront.net/
 
 ![image info](readmeImages/uploadPage.png)
 ![image info](readmeImages/mainPage.png)
-![image info](readmeImages/editContextPage.png)
+![image info](readmeImages/contextPage.png)
 
 
 ## Project Overview
